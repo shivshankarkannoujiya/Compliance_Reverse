@@ -5,18 +5,24 @@ sys.path.insert(0,'.')
 # REPORT_PROFILE selects the recording, figure manifest and output folder (see build.py).
 PROFILE=os.environ.get("REPORT_PROFILE","staff")
 FIG_MOD,FIG_DIR,V={"staff":("figures","figs","/home/user/Compliance_Reverse/first/Microsoft Teams meeting-20260811_131142-Meeting Recording (1).mp4"),
-                   "incidents":("figures_incidents","figs_incidents","/home/user/Compliance_Reverse/second/Microsoft Teams meeting-20260811_135933-Meeting Recording.mp4")}[PROFILE]
+                   "incidents":("figures_incidents","figs_incidents","/home/user/Compliance_Reverse/second/Microsoft Teams meeting-20260811_135933-Meeting Recording.mp4"),
+                   "complications":("figures_complications","figs_complications","/home/user/Compliance_Reverse/third/Meeting with Andrew R. Biggins-20260814_120551-Meeting Recording.mp4")}[PROFILE]
 FIGS=importlib.import_module(FIG_MOD).FIGS
 os.makedirs(FIG_DIR,exist_ok=True)
 CROPS={"xl":(0,95,1675,990),"top":(0,290,1675,700),"full":(0,0,1920,1080),"popup":(350,380,1350,1080),
-       "explorer":(0,0,1675,1065),"refzoom":(1000,490,1675,990)}
+       "explorer":(0,0,1675,1065),"refzoom":(1000,490,1675,990),"fb":(0,270,1675,413)}
 def grab(t,out):
     subprocess.run(["ffmpeg","-v","error","-y","-ss",t,"-i",V,"-frames:v","1","-q:v","1",out],check=True)
 rep=[]
 from PIL import ImageFilter, ImageDraw
 # Boxes (in cropped-image pixels) blurred to keep patient/staff details out of the report: Datix Name (B) and Description (G) cells.
 REDACT={"redact_wide":[(77,345,163,835),(1051,345,1167,835)],
-        "redact_narrow":[(71,322,160,835),(1012,322,1162,835)]}
+        "redact_narrow":[(71,322,160,835),(1012,322,1162,835)],
+        # Complications: NHS numbers, patient names (Appt Ref / Patient ID), clinical notes and NHS-number lookup keys.
+        "cd_left":[(20,305,101,800),(1546,305,1652,800)],
+        "cd_right":[(684,305,1173,800),(1449,305,1597,800)],
+        "ap":[(100,312,487,800),(860,312,1148,800)],
+        "sys1":[(34,300,152,800)]}
 def redact(im,boxes):
     for b in boxes:
         im.paste(im.crop(b).filter(ImageFilter.GaussianBlur(9)),b[:2])

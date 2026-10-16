@@ -23,7 +23,7 @@ def sref(t):
 
 def build(out):
     import importlib
-    D = importlib.import_module({"staff": "prereq_staff", "incidents": "prereq_incidents"}[B.PROFILE])
+    D = importlib.import_module({"staff": "prereq_staff", "incidents": "prereq_incidents", "complications": "prereq_complications"}[B.PROFILE])
     M = D.META
     tables = (D.FILES, D.SHEETS, D.VBA, D.RULES, D.DECISIONS)
     blockers = M["blockers"]

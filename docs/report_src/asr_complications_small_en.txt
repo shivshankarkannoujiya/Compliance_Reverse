@@ -1,0 +1,136 @@
+[00:00:06-00:00:09] I diraj, so this would be the last
+[00:00:10-00:00:12] the last video at least for now
+[00:00:12-00:00:14] uh... this on
+[00:00:15-00:00:20] Video deals with complications, compliance.
+[00:00:20-00:00:23] So this is operation.
+[00:00:24-00:00:25] applications.
+[00:00:26-00:00:27] I'll show my screen.
+[00:00:31-00:00:34] Okay, so this is the most manual.
+[00:00:35-00:00:39] I would say of our compliance processes and the reason is
+[00:00:40-00:00:42] I think the
+[00:00:43-00:00:45] There was a
+[00:00:46-00:00:50] There was an intention to automate it in a similar way.
+[00:00:50-00:00:52] to others that you've seen, but it wasn't.
+[00:00:53-00:00:56] anywhere near finished before Matt left.
+[00:00:56-00:00:57] uh...
+[00:00:58-00:01:02] Paul Harrison was quite keen for it to appear on the dashboard at the time.
+[00:01:02-00:01:04] So he asked us to see if we could
+[00:01:06-00:01:08] cobble together something of our own that...
+[00:01:09-00:01:13] be meaningful and then look at automation later on.
+[00:01:14-00:01:16] It hasn't been automated.
+[00:01:16-00:01:19] But this is essentially how we do it. So.
+[00:01:19-00:01:21] This is our complications report.
+[00:01:22-00:01:29] And before the dashboard came about, it was used to monitor complications and record complications.
+[00:01:30-00:01:34] How it affects me works is this. When it...
+[00:01:35-00:01:35] Um
+[00:01:36-00:01:37] It's a
+[00:01:38-00:01:39] It's opened.
+[00:01:40-00:01:42] There's a little bit of visual basic.
+[00:01:43-00:01:44] uh...
+[00:01:46-00:01:47] Somewhere
+[00:01:49-00:01:50] Perhaps it's not
+[00:01:52-00:01:54] Oh, no, it probably isn't actually. It's.
+[00:01:55-00:02:01] It has a Power Query which effectively refreshes on launch of the workbook.
+[00:02:02-00:02:03] So the
+[00:02:06-00:02:07] The Power Query
+[00:02:08-00:02:09] is an extract.
+[00:02:09-00:02:10] from our appointments.
+[00:02:12-00:02:12] Date of store.
+[00:02:14-00:02:16] It goes to this table here.
+[00:02:18-00:02:18] uh...
+[00:02:19-00:02:22] and then there are some formulae
+[00:02:23-00:02:25] So it's
+[00:02:26-00:02:27] gives a patient.
+[00:02:29-00:02:30] patient ID,
+[00:02:31-00:02:35] next appointment date I don't know why that's required but it's in there
+[00:02:36-00:02:38] And then it says if there's an infection.
+[00:02:40-00:02:40] uh...
+[00:02:42-00:02:43] High in
+[00:02:45-00:02:46] or Vazphalia.
+[00:02:47-00:02:48] uh...
+[00:02:51-00:02:51] Bye.
+[00:02:52-00:02:53] searching.
+[00:02:54-00:02:55] within
+[00:02:56-00:02:58] this tab here
+[00:02:59-00:03:02] That's table five
+[00:03:04-00:03:10] That's the one and two recurn, it's just blubber bla appointment, clockwise pictures.
+[00:03:11-00:03:13] Yeah.
+[00:03:14-00:03:15] I'm pretty sure it
+[00:03:16-00:03:18] complications.
+[00:03:21-00:03:23] that must be this one or is it even this one?
+[00:03:27-00:03:32] No, complications, details. Perhaps it is that one actually.
+[00:03:33-00:03:34] complications from system one.
+[00:03:36-00:03:41] So we wait for the appointments to refresh. We upload.
+[00:03:42-00:03:43] from System 1.
+[00:03:44-00:03:47] Complications, details, we copy any new...
+[00:03:49-00:03:51] complications into a log.
+[00:03:54-00:03:54] uh...
+[00:03:55-00:04:01] There's a lookup in the log. I don't even know what that is specifically useful. It might be to cross refer.
+[00:04:03-00:04:04] with this
+[00:04:05-00:04:06] Again, this was all set up.
+[00:04:07-00:04:09] back in the midst of time by Matt.
+[00:04:10-00:04:11] Now our various pivots.
+[00:04:13-00:04:14] which
+[00:04:18-00:04:21] We refresh after the data has been.
+[00:04:22-00:04:23] Loads it in.
+[00:04:24-00:04:26] So these pivots.
+[00:04:27-00:04:30] pulling information from...
+[00:04:31-00:04:32] here
+[00:04:32-00:04:34] which is our appointments
+[00:04:35-00:04:37] master list if you like.
+[00:04:39-00:04:42] So it's pulling.
+[00:04:45-00:04:45] in
+[00:04:47-00:04:49] So this is vaz ops.
+[00:04:56-00:04:57] This is all ops.
+[00:05:02-00:05:03] This is all infections.
+[00:05:04-00:05:06] This is all pain.
+[00:05:08-00:05:13] Then there are a series of tables which Matt set up to calculate.
+[00:05:14-00:05:20] to a calculated time rates of incidents for complications.
+[00:05:26-00:05:32] And then the compliance is really a manual process whereby we count.
+[00:05:33-00:05:35] how many complications.
+[00:05:36-00:05:38] of different types have occurred.
+[00:05:39-00:05:40] In
+[00:05:41-00:05:42] Um
+[00:05:43-00:05:45] in the last 12 months.
+[00:05:47-00:05:48] and
+[00:05:49-00:05:52] We then calculate what the rates...
+[00:05:54-00:05:57] of incidents are for each month.
+[00:05:58-00:06:00] And then we have a set of standards.
+[00:06:01-00:06:02] here
+[00:06:05-00:06:09] by if they're within those, they're compliant if they're not.
+[00:06:09-00:06:11] They're non-compliant.
+[00:06:13-00:06:13] um...
+[00:06:16-00:06:18] and then this works out.
+[00:06:19-00:06:21] for failure rates, the 12 month spike.
+[00:06:22-00:06:25] based on the calculations here.
+[00:06:26-00:06:29] And then once we know if everything is compliant or not compliant.
+[00:06:30-00:06:31] We copy.
+[00:06:32-00:06:33] Umm...
+[00:06:35-00:06:36] We copy the data.
+[00:06:38-00:06:39] from a
+[00:06:40-00:06:41] Simple Table
+[00:06:42-00:06:43] Um...
+[00:06:46-00:06:47] which is here.
+[00:06:48-00:06:52] which you'll recognize from the other compliance areas with.
+[00:06:52-00:06:53] covered.
+[00:06:54-00:06:55] um
+[00:06:55-00:06:57] We copied into the bottom.
+[00:06:57-00:06:59] of our compliance data.
+[00:07:03-00:07:05] into the bottom here.
+[00:07:08-00:07:09] We
+[00:07:10-00:07:12] update our last update.
+[00:07:12-00:07:13] die
+[00:07:14-00:07:15] So
+[00:07:15-00:07:22] communications and we save it and we refresh twice. The compliance time phase and the requirements.
+[00:07:22-00:07:23] Um
+[00:07:24-00:07:25] Pull from a
+[00:07:28-00:07:29] another document.
+[00:07:30-00:07:32] which was the original automated...
+[00:07:33-00:07:33] version
+[00:07:34-00:07:35] of that.
+[00:07:36-00:07:39] But it's literally it's two tables
+[00:07:39-00:07:41] Listing requirements.
+[00:07:41-00:07:43] and type frames.
+[00:07:44-00:07:50] Hopefully that makes a bit of sense. Again, that's the last one.
+[00:07:50-00:07:51] So, um...
+[00:07:53-00:07:57] Yeah, let us know if you have any questions. Cheers.
