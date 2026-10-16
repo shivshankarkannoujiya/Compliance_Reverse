@@ -7,7 +7,8 @@ PROFILE=os.environ.get("REPORT_PROFILE","staff")
 FIG_MOD,FIG_DIR,V={"staff":("figures","figs","/home/user/Compliance_Reverse/first/Microsoft Teams meeting-20260811_131142-Meeting Recording (1).mp4"),
                    "incidents":("figures_incidents","figs_incidents","/home/user/Compliance_Reverse/second/Microsoft Teams meeting-20260811_135933-Meeting Recording.mp4"),
                    "complications":("figures_complications","figs_complications","/home/user/Compliance_Reverse/third/Meeting with Andrew R. Biggins-20260814_120551-Meeting Recording.mp4"),
-                   "training":("figures_training","figs_training","/home/user/Compliance_Reverse/fourth/Meeting with Andrew R. Biggins-20260814_113314-Meeting Recording.mp4")}[PROFILE]
+                   "training":("figures_training","figs_training","/home/user/Compliance_Reverse/fourth/Meeting with Andrew R. Biggins-20260814_113314-Meeting Recording.mp4"),
+                   "feedback":("figures_feedback","figs_feedback","/home/user/Compliance_Reverse/fifth/Meeting with Andrew R. Biggins-20260814_111322-Meeting Recording.mp4")}[PROFILE]
 FIGS=importlib.import_module(FIG_MOD).FIGS
 os.makedirs(FIG_DIR,exist_ok=True)
 CROPS={"xl":(0,95,1675,990),"top":(0,290,1675,700),"full":(0,0,1920,1080),"popup":(350,380,1350,1080),
@@ -25,7 +26,10 @@ REDACT={"redact_wide":[(77,345,163,835),(1051,345,1167,835)],
         "ap":[(100,312,487,800),(860,312,1148,800)],
         "sys1":[(34,300,152,800)],
         # Training: personal email addresses on the staff list.
-        "email":[(254,312,1075,800)]}
+        "email":[(254,312,1075,800)],
+        # Feedback: free-text patient comments (and the formula bar, which echoes the selected comment).
+        "raw":[(838,280,1675,895)],
+        "all":[(240,200,1660,250),(330,330,965,895)]}
 def redact(im,boxes):
     for b in boxes:
         im.paste(im.crop(b).filter(ImageFilter.GaussianBlur(9)),b[:2])
