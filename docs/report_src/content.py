@@ -25,7 +25,7 @@ TITLE_BLOCK = [
     ["<b>Timestamps</b>", "All [HH:MM:SS] values are positions in the .mp4, re-derived by the author with an offline Whisper (small.en/base.en) "
      "transcription and frame-accurate seeks; every figure was extracted with ffmpeg at the stated second"],
     ["<b>Report date</b>", "16 October 2026"],
-    ["<b>Status</b>", "Draft for business-owner review. Items in §6 must be confirmed before build starts"],
+    ["<b>Status</b>", "Draft for business-owner review. Items in §6 and prerequisites in §7.1 must be confirmed before build starts"],
 ]
 
 EXEC_SUMMARY_INTRO = ("<b>What the recording shows.</b> A single operator demonstrates, end-to-end, how a new person "
@@ -49,6 +49,8 @@ EXEC_SUMMARY = [
     "<b>The provided .srt does not belong to this video</b> (it covers an <i>Incidents</i>/Datix workflow from a different meeting). "
     "Elements requested in the brief that come from that workflow — Datix CSV pastes, <font name='DVM'>#REF!</font>/<font name='DVM'>#N/A</font> fixes, "
     "“Copy Data” flags — do <b>not</b> occur in this recording. This report documents what is actually on screen and flags the mismatch (§0.2, §6).",
+    "<b>Build requirements (§7):</b> 11 business prerequisites, 20 functional and 10 non-functional requirements, technology, migration, testing, roles "
+    "and phasing. Each one states why it is required and points to the evidence, and §7.9 traces every observed problem to the requirement that removes it.",
     "<b>Target design (§5):</b> a staged-ingest, relational model with surrogate keys, immutable versioned reference data, "
     "an append-only compliance-event ledger with derived current-state views, a review gate, and atomic publication "
     "batches replacing the save → refresh → save → refresh choreography.",
@@ -680,4 +682,197 @@ def appendix(c):
         ["00:28:46", "I’m just going to make Testy Tester not active."],
         ["00:29:29", "We don’t save at this stage because… it closes the compliance data before… these formulas, which are just lookups, can corrupt."],
     ], [18, 162])]
+    return s
+
+
+# --------------------------------------------------------------------------------------------
+def section7(c):
+    para, H, table, bullets, figref = c["para"], c["H"], c["table"], c["bullets"], c["figref"]
+    W = [13, 50, 117]
+    s = [H("7. What Is Required to Build the Modern System", 0),
+         para("This section lists everything needed to build the replacement described in §5: business inputs, functional and non-functional "
+              "requirements, technology, data migration, testing, people and phasing. <b>Every item gives the reason it is required</b>, "
+              "traced to the evidence in this report (figure, timestamp, failure mode FM-xx, exception EX-xx, discrepancy SV-xx or gap G-xx). "
+              "An item with no evidence-backed reason is left out on purpose. Priority: <b>M</b> = must have for go-live, <b>S</b> = should have, "
+              "<b>C</b> = could have later.")]
+
+    # 7.1 Prerequisites
+    s += [H("7.1 Prerequisites from the business (before any build starts)", 1),
+          para("These are inputs only the business can supply. Without them the build would copy unknown behaviour or encode unconfirmed rules."),
+          table([
+              ["ID", "What is required", "Why it is required"],
+              ["P-01", "<b>Export of the full VBA project</b> from Staff Management.xlsm (all modules: List Missing, Add/Update Requirements, Add New / Update Existing Compliance, close/last-updated)",
+               "The macros hold the write logic, and none of it was visible. Without the code we cannot tell which store row <i>Update</i> overwrites (G-04), why a blank row stops a batch (FM-08), or what causes run-time error 13 (" + figref("vba") + ", G-15)."],
+              ["P-02", "<b>Copy of Compliance Data.xlsm</b> with its Power Query definitions (M code), table list and the dashboard file",
+               "The data store and PQ outputs were never on screen (SV-06, G-02, G-06). Their schema sets the migration source and what the dashboard expects, and they are needed for the parity test in 7.6."],
+              ["P-03", "<b>Full, approved compliance-type catalogue</b> (all rows of Compliance_Timeframe_Table incl. IR35 and onboarding items)",
+               "IR35 Compliant appears in a list but not in the table rows seen (G-05). Every requirement, due date and gauge depends on this catalogue, so it must be complete and signed off."],
+              ["P-04", "<b>Policy decisions from the business owner (Richard)</b>: Core vs non-core per type; whether Compliance Groups 3/4 stay; whether onboarding is in scope",
+               "The operator disputes the current Core flags and says the grouping and onboarding scope are “for Richard to make a call on” (00:08:32–00:09:54, G-08). Building on unapproved rules would bake in disputed numbers."],
+              ["P-05", "<b>Due-date rule</b>: is the due date the expiry day or the day after? Must a corrected record recompute it?",
+               "Spoken “to 31 May” vs the shown 01/06/2027 (SV-03), and the due date is typed by hand on update (" + figref("mcU") + ", FM-09). The rule decides every RAG status."],
+              ["P-06", "<b>RAG rule</b> (amber window, how Scheduled / Sign-off Required count)",
+               "RAG is picked by hand today (" + figref("mc2") + ", FM-10). Deriving it automatically needs an agreed rule."],
+              ["P-07", "<b>Mandatory-field list</b> per subject type (e.g. is Managed By required?)",
+               "A blank Managed By silently became 0 downstream (" + figref("reqA") + ", EX-01), and the operator is unsure whether it is essential (G-17)."],
+              ["P-08", "<b>Role templates</b>: which compliance types apply to each role (GPwSI-Vasectomy, Nurse, HCA, …)",
+               "Today the operator decides 22 types from memory for each new person (00:14:50–00:17:53), and two Core values were entered against what was said (SV-01/02). Templates make this repeatable."],
+              ["P-09", "<b>Named owners and approvers</b> (data owner, compliance approver, system admin)",
+               "The four-eyes review gate (§5.5) and the publication sign-off need named people. Today one operator does everything with no second check."],
+              ["P-10", "<b>Information-governance sign-off</b>: DPIA, lawful basis, retention periods for DBS/indemnity/appraisal evidence",
+               "The system holds personal staff data (phones, emails, DBS dates, professional registration). An NHS-facing provider must do a DPIA and set retention before storing this centrally."],
+              ["P-11", "<b>Recordings of the remaining tools</b> (Incidents/Datix, Estates, Medical Devices, Onboarding)",
+               "The supplied .srt is an Incidents workflow (G-01); Instructions and Manage Onboarding were never opened (G-12). The generic model (subject_type) must be checked against these before its schema is frozen."],
+          ], W)]
+
+    # 7.2 Functional
+    s += [H("7.2 Functional requirements", 1), table([
+        ["ID", "Requirement (priority)", "Why it is required"],
+        ["FR-01", "<b>Subject register with a system ID</b>; names are display-only and can be renamed (M)",
+         "Every lookup today is on the name text (BR-01). A typo, rename or a duplicate name breaks or merges records silently (FM-01)."],
+        ["FR-02", "<b>Alias table</b> for SystmOne / PD / email identities, unique per system (S)",
+         "Names!K:M hold the same person under other system names (" + figref("nm1") + "). Imports and connectors need a dependable way to match a person."],
+        ["FR-03", "<b>Effective-dated activity</b> (active from/to) instead of a TRUE/FALSE flag (M)",
+         "Active is the main dashboard filter (00:04:16) and was flipped by hand to hide a test person (" + figref("nmY") + "). With dates, history stays correct for past reporting periods."],
+        ["FR-04", "<b>Requirement set-up wizard</b> pre-filled from role templates, with a reason logged for each deviation (M)",
+         "Replaces List Missing and a manual 22-row grid (" + figref("mrL") + ", " + figref("mrF") + ") that produced two wrong Core flags (SV-01/02)."],
+        ["FR-05", "<b>“Missing requirements” view</b> for all subjects, independent of what is on screen (M)",
+         "The current Missing column only works for whichever name is selected on the form (" + figref("ctJ") + ", SV-09, FM-13)."],
+        ["FR-06", "<b>Compliance evidence entry</b>: date, status, notes and an <b>evidence file upload</b> (M)",
+         "Evidence today is a note like “Certificate on file” with no link to the document (" + figref("mc2") + "). Audits need the actual file and its hash."],
+        ["FR-07", "<b>Automatic due date</b> from the policy version in force on the completion date (M)",
+         "The due date is typed by hand on the update path (" + figref("mcU") + ") and can drift from the frequency (FM-09)."],
+        ["FR-08", "<b>Automatic RAG</b> with a justified, time-limited override (M)",
+         "RAG is selected by hand (" + figref("mc3") + "), so a lapsed item can stay Green (FM-10)."],
+        ["FR-09", "<b>Corrections and voids as new events</b>, keeping the original (M)",
+         "<i>Update Existing Compliance</i> overwrites the record (" + figref("mcU2") + "), and the Delete flag removes it, leaving no audit trail (FM-03)."],
+        ["FR-10", "<b>Current-state view</b> that always picks the latest valid event (M)",
+         "Lookups return the <i>first</i> match on a table that keeps history (" + figref("mcV") + ", FM-02), so stale evidence can show."],
+        ["FR-11", "<b>Validation that blocks bad input</b> (missing mandatory fields, unknown types, future or impossible dates, duplicates) with clear messages (M)",
+         "Blanks become 0 (FM-07), batches stop at a blank row with no warning (FM-08), and date formats are mixed (G-09)."],
+        ["FR-12", "<b>Bulk import</b> (CSV/XLSX template) through the same validation (S)",
+         "Needed for migration (§7.5) and for sibling tools and future exports such as Datix (G-01). It also removes copy-paste as a data path."],
+        ["FR-13", "<b>Review/approval gate</b> with a before/after diff per subject (M)",
+         "One operator changes requirements and evidence and publishes with no second check; errors like SV-01/02 reach the dashboard unseen."],
+        ["FR-14", "<b>One-click atomic publish and rollback</b>, with a recorded publish time (M)",
+         "Today’s save → refresh → save → refresh can stop half-way (cancelled at 00:28:24, error at 00:29:17; FM-05/06). “Last updated” is filled in by hand because its macro fails (EX-03)."],
+        ["FR-15", "<b>Due/overdue work queue and reminders</b> to staff and managers (S)",
+         "The monthly cycle is to chase clinicians and staff by hand for anything not yet updated (00:26:18–00:26:38)."],
+        ["FR-16", "<b>Training/sandbox mode</b> separate from production (S)",
+         "The demo left 22 test requirement rows and 8 store records in the live files, hidden only by Active = FALSE (FM-16)."],
+        ["FR-17", "<b>Reference-data admin</b> for compliance types, policy versions, thresholds, roles and organisations, with approval (M)",
+         "These lists are hand-edited cells today; the Roles header holds a data value (" + figref("rol") + ", FM-12), and thresholds were set by one person (00:11:03)."],
+        ["FR-18", "<b>Generic subject types</b> (staff, site, device, …) on one engine (S)",
+         "The same tool is cloned per domain: a “Site” header on the staff form gives this away (" + figref("mrT") + "). The operator confirms sites and devices follow the same pattern (00:03:22)."],
+        ["FR-19", "<b>Correct coverage metrics</b> (requirements set up vs applicable types, same scope) (S)",
+         "The current count shows 23/22 and 45/22 because it mixes onboarding rows with a staff-only total (" + figref("nm3") + ", FM-11)."],
+        ["FR-20", "<b>Dashboard feed</b>: published views and policy thresholds exposed to the BI tool (M)",
+         "The dashboard reads Active, the requirement and compliance tables, and Threshold 1–5 for its gauges (00:10:40, " + figref("ct3") + ")."],
+    ], W)]
+
+    # 7.3 Non-functional
+    s += [H("7.3 Non-functional requirements", 1), table([
+        ["ID", "Requirement", "Why it is required"],
+        ["NFR-01", "<b>Database-enforced integrity</b>: primary/foreign keys, unique constraints, check constraints", "Excel cannot stop duplicate keys or orphan rows (FM-01, FM-02). The database must refuse bad data, not just a form."],
+        ["NFR-02", "<b>Row-level audit log</b> (who, when, before/after) retained per policy", "There is currently no record of who changed compliance evidence or when (FM-03). Regulators and internal audit will ask."],
+        ["NFR-03", "<b>Single sign-on and role-based access</b> (Operator, Approver, Viewer, Admin)", "The files sit on a shared drive (Z:\\…) open to anyone with drive access. The four-eyes gate (FR-13) needs real user identities."],
+        ["NFR-04", "<b>Data protection</b>: encryption in transit and at rest, contact details in a restricted table, UK GDPR / NHS DSP Toolkit alignment", "Staff personal data and DBS details are held (" + figref("nm2") + "). See P-10."],
+        ["NFR-05", "<b>Performance</b>: publish in seconds; UI responses under 1 s for one subject", "Refresh over the VPN is slow (“five or six seconds in the office”, much longer remotely: 00:27:19), and the operator cancels it."],
+        ["NFR-06", "<b>No file-locking or open-order dependency</b>", "Lookups “can corrupt” if Compliance Data closes first, so saving at close is avoided (00:29:29, FM-04)."],
+        ["NFR-07", "<b>Reliability</b>: daily backups, tested restore; target RPO ≤ 24 h, RTO ≤ 4 h (to confirm)", "Today the only copy is the workbook on Z:. A corrupt save, which the operator already guards against, loses data."],
+        ["NFR-08", "<b>Maintainability</b>: logic as version-controlled SQL and code with automated tests", "The VBA is broken and an internal expert could not debug it (00:28:09, FM-14)."],
+        ["NFR-09", "<b>Observability</b>: job logs, publish history, failed-validation counts, alerts", "Failures today are silent (FM-05/07/08) or show up as a modal error dialog (" + figref("vba") + ")."],
+        ["NFR-10", "<b>Accessibility</b> (WCAG 2.2 AA) for the entry UI", "Public-sector web services are expected to meet it. The Excel status bar already flags “Accessibility: Investigate” on these sheets."],
+    ], W)]
+
+    # 7.4 Technology
+    s += [H("7.4 Technology components", 1),
+          para("A recommended default is given for each component; any equivalent works if it meets the reason. Defaults favour the "
+               "Microsoft 365 estate shown in the recording (Teams, Excel, Power Query)."),
+          table([
+              ["Component", "Recommended default", "Why it is required"],
+              ["Relational database", "PostgreSQL 16 (or Azure SQL)", "Needs keys and constraints (NFR-01), window functions such as ROW_NUMBER and LAG for current state and history (FR-10), and transactions for atomic publish (FR-14)."],
+              ["Application API", "A typed backend service (e.g. NestJS/TypeScript or ASP.NET Core)", "One place for the business rules (BR-01…11), validation (FR-11) and the review gate (FR-13), instead of logic spread across cells and VBA."],
+              ["Web user interface", "React single-page app (or Power Apps for a low-code route)", "Replaces the Manage Requirements / Manage Compliance forms with validated forms, the wizard (FR-04) and the review diff (FR-13)."],
+              ["Identity provider", "Microsoft Entra ID single sign-on", "The organisation already works in Microsoft 365. It gives real user identities for audit and approvals (NFR-02/03) with no new passwords."],
+              ["Evidence file storage", "Azure Blob Storage or SharePoint library, private, with SHA-256 per file", "Needed to hold the certificates and copies now noted only as “on file” (FR-06)."],
+              ["Ingestion/validation library", "Frictionless/JSON-Schema contracts + import service", "Header and cell checks for bulk imports (FR-12) so nothing enters by copy-paste."],
+              ["Job scheduler", "Platform scheduler (e.g. Azure Functions timer / cron worker)", "For reminders (FR-15), optional register checks (GMC, DBS update service) and nightly integrity reports (NFR-09)."],
+              ["BI / dashboard", "Existing dashboard tool (likely Power BI, to confirm, G-16) on published views", "Keeps users on the dashboard they know while removing Power Query file merges (FR-20)."],
+              ["Source control and CI/CD", "Git repository (this one) + pipeline with tests and migrations", "Makes rule changes reviewable and testable (NFR-08), unlike VBA that nobody can debug."],
+              ["Infrastructure as code", "Bicep/Terraform", "Repeatable dev, test and prod environments; the sandbox (FR-16) becomes a normal environment."],
+              ["Monitoring", "Application Insights / OpenTelemetry", "Supports NFR-09 (logs, alerts on failed publishes)."],
+          ], [32, 50, 98])]
+
+    # 7.5 Migration
+    s += [H("7.5 Data migration requirements", 1), table([
+        ["ID", "What is required", "Why it is required"],
+        ["DM-01", "Read-only extracts of name_Table (~140 rows), requirements_Table (~2,320), Compliance_Timeframe_Table, Roles, compliance_Data_Store_Table", "These are the only records of who must comply with what, and of the evidence held (" + figref("req0") + ")."],
+        ["DM-02", "Cleansing rules: trim and normalise names; map Managed By 0 → NULL or a value; fix the Roles header; standardise Start Date; split multi-address emails", "Known defects seen on screen (FM-07, FM-12, G-09) would otherwise move into the new database."],
+        ["DM-03", "Duplicate-key report (Name-Type pairs with more than one row) for business resolution", "Counts of 23 and 45 per person (FM-11) and first-match lookups (FM-02) suggest duplicates and history that someone must review."],
+        ["DM-04", "Policy v1 = today’s catalogue values; v2 = approved values from P-04", "Keeps past reporting reproducible while the corrected rules take effect from an agreed date."],
+        ["DM-05", "Exclude or flag test records (e.g. “Testy Tester”)", "The demo left test data in production (FM-16)."],
+        ["DM-06", "Freeze window and final delta load", "The Excel tool keeps changing during the parallel run, so the last changes must be carried over."],
+    ], W)]
+
+    # 7.6 Testing
+    s += [H("7.6 Testing and acceptance requirements", 1), table([
+        ["ID", "What is required", "Why it is required"],
+        ["T-01", "Unit tests for every business rule BR-01…BR-11 and every SQL view", "The rules are reverse-engineered from a video; tests pin them down and catch regressions."],
+        ["T-02", "Golden-case tests from this recording (Testy Tester: 22 requirements, 8 events, PI correction to 01/05/2026 → due 01/05/2027)", "This is the one fully observed end-to-end case (" + figref("reqA") + ", " + figref("mcU2") + "), so it is ideal as an acceptance script."],
+        ["T-03", "Parity reconciliation for one monthly cycle: new mart vs Excel-built dashboard, per subject and type; differences explained", "Shows the new system gives the same answers, or that each difference is a known defect fixed (§4.4)."],
+        ["T-04", "Negative tests: blank mandatory fields, duplicate names, bad dates, interrupted publish", "These are the exact failure modes found in this workflow (FM-05/06/07/08)."],
+        ["T-05", "User acceptance by the operator and the approver", "They own the monthly process and the policy decisions (P-04, P-09)."],
+        ["T-06", "Security and IG testing (access control, penetration test as policy requires)", "Personal and DBS data are involved (NFR-03/04, P-10)."],
+    ], W)]
+
+    # 7.7 People
+    s += [H("7.7 People and roles", 1), table([
+        ["Role", "Responsibility", "Why it is required"],
+        ["Business owner (Richard, per recording)", "Approves policy, Core flags, grouping and scope", "Named by the operator as the decision-maker for open policy questions (00:09:54)."],
+        ["Compliance SME (current operator)", "Explains the process, writes test cases, runs UAT", "The only person shown who knows the monthly routine and its workarounds."],
+        ["Product owner / business analyst", "Owns the backlog; closes the §6 gaps", "19 open gaps must be closed before the schema is final."],
+        ["Data engineer", "Schema, migration, views, publish transaction", "Most of the work is data modelling and migration (§5.3, §7.5)."],
+        ["Backend and frontend developers", "API, rules, UI forms, wizard, review screen", "Replace the VBA and form logic (FR-04…FR-14)."],
+        ["QA / test analyst", "Automated tests, parity reconciliation", "Needed for T-01…T-04."],
+        ["DevOps / platform engineer", "Environments, CI/CD, backups, monitoring", "Needed for NFR-07…NFR-09."],
+        ["Information-governance lead / DPO", "DPIA, retention, access policy", "Needed for P-10 and NFR-04."],
+    ], [40, 60, 80])]
+
+    # 7.8 Phasing
+    s += [H("7.8 Delivery phases and exit criteria", 1),
+          para("Sizes are relative (S/M/L), not time estimates; they can only be firmed up once P-01 and P-02 are received."),
+          table([
+              ["Phase", "Scope", "Exit criteria", "Size"],
+              ["0. Discovery", "Collect P-01…P-11; close the §6 gaps; confirm the dashboard tool", "Signed policy v2; VBA and PQ logic documented; DPIA started", "S"],
+              ["1. Foundation", "Database schema, reference-data admin, identity/SSO, environments, CI/CD", "Reference data loaded; access roles working; empty schema deployed to test", "M"],
+              ["2. Core workflow", "Subject register, requirement wizard, evidence entry with files, derived due date/RAG, corrections", "Golden case T-02 passes end to end", "L"],
+              ["3. Controls and publish", "Validation, review gate, atomic publish/rollback, audit log, dashboard views", "Interrupted-publish test passes; dashboard reads published views", "M"],
+              ["4. Migration and parity", "Cleansing, load, one parallel monthly cycle", "T-03 differences all explained; business sign-off", "M"],
+              ["5. Go-live and extend", "Retire Excel tool (read-only archive); add reminders; onboard next subject type", "Excel no longer used for Staff Management; next domain scoped", "S–M"],
+          ], [24, 66, 70, 12])]
+
+    # 7.9 Traceability
+    s += [H("7.9 Traceability: each observed problem and the requirement that removes it", 1), table([
+        ["Observed problem", "Evidence", "Removed by"],
+        ["FM-01 Key drift on name strings", "BR-01, " + figref("reqG"), "FR-01, FR-02, NFR-01"],
+        ["FM-02 First-match lookup on history", figref("mcV"), "FR-10"],
+        ["FM-03 Destructive updates, no audit", figref("mcU2"), "FR-09, NFR-02"],
+        ["FM-04 Workbook open/close coupling", "00:29:29, " + figref("sv"), "NFR-06 (single database)"],
+        ["FM-05/06 Unsaved or half-finished publish", "00:27:35, 00:28:24, " + figref("vba"), "FR-14"],
+        ["FM-07 Blank → 0 coercion (Managed By)", figref("reqA"), "FR-11, P-07"],
+        ["FM-08 Batch stops at a blank row", "00:20:45", "FR-11, FR-12"],
+        ["FM-09 Hand-typed due dates", figref("mcU"), "FR-07, P-05"],
+        ["FM-10 Hand-picked RAG", figref("mc3"), "FR-08, P-06"],
+        ["FM-11 Wrong coverage denominator", figref("nm3"), "FR-19"],
+        ["FM-12 Reference-data hygiene", figref("rol"), "FR-17, DM-02"],
+        ["FM-13 Screen-dependent formula (Missing)", figref("ctJ"), "FR-05"],
+        ["FM-14 VBA nobody can debug", figref("vba") + ", 00:28:09", "NFR-08, P-01"],
+        ["FM-15 Unbounded, unsorted tables", figref("reqA"), "NFR-01 (indexed tables)"],
+        ["FM-16 Test data in production", figref("nmY"), "FR-16, DM-05"],
+        ["SV-01/02 Core flags differ from speech", figref("reqA"), "FR-04, FR-13, P-04, P-08"],
+        ["EX-03 Last-updated filled in by hand", figref("vba"), "FR-14"],
+        ["Manual monthly chasing", "00:26:18", "FR-15"],
+    ], [62, 58, 60])]
+    s.append(c["PageBreak"]())
     return s

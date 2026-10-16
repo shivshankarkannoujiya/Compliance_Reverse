@@ -168,6 +168,7 @@ def build(out):
     story += C.section4(ctx)
     story += C.section5(ctx)
     story += C.section6(ctx)
+    story += C.section7(ctx)
     story += C.appendix(ctx)
     doc.multiBuild(story)
     EMBEDDED.clear()

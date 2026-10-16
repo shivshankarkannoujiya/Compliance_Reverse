@@ -1,6 +1,6 @@
 # Report sources
 
-Generator for `../Staff_Management_Compliance_Workflow_Specification.pdf`.
+Generator for `../../01_Staff_Management/Staff_Management_Compliance_Workflow_Specification.pdf`.
 
 - `figures.py` – figure manifest: id, video timestamp, workbook, tab, caption, crop.
 - `extract.py` – pulls each frame from the `.mp4` with ffmpeg at the exact timestamp and crops it (needs `git lfs pull` first).
