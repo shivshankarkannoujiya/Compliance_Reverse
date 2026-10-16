@@ -17,7 +17,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # One generator, several recordings: REPORT_PROFILE picks the figure manifest, content module and figure folder.
 PROFILE = os.environ.get("REPORT_PROFILE", "staff")
 PROFILES = {"staff": ("figures", "content", "figs"),
-            "incidents": ("figures_incidents", "content_incidents", "figs_incidents")}
+            "incidents": ("figures_incidents", "content_incidents", "figs_incidents"),
+            "complications": ("figures_complications", "content_complications", "figs_complications")}
 _FIG_MOD, _CONTENT_MOD, FIG_DIR = PROFILES[PROFILE]
 FIGS = importlib.import_module(_FIG_MOD).FIGS
 C = importlib.import_module(_CONTENT_MOD)
