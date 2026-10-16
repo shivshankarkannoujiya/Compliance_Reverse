@@ -8,7 +8,8 @@ FIG_MOD,FIG_DIR,V={"staff":("figures","figs","/home/user/Compliance_Reverse/firs
                    "incidents":("figures_incidents","figs_incidents","/home/user/Compliance_Reverse/second/Microsoft Teams meeting-20260811_135933-Meeting Recording.mp4"),
                    "complications":("figures_complications","figs_complications","/home/user/Compliance_Reverse/third/Meeting with Andrew R. Biggins-20260814_120551-Meeting Recording.mp4"),
                    "training":("figures_training","figs_training","/home/user/Compliance_Reverse/fourth/Meeting with Andrew R. Biggins-20260814_113314-Meeting Recording.mp4"),
-                   "feedback":("figures_feedback","figs_feedback","/home/user/Compliance_Reverse/fifth/Meeting with Andrew R. Biggins-20260814_111322-Meeting Recording.mp4")}[PROFILE]
+                   "feedback":("figures_feedback","figs_feedback","/home/user/Compliance_Reverse/fifth/Meeting with Andrew R. Biggins-20260814_111322-Meeting Recording.mp4"),
+                   "rtt":("figures_rtt","figs_rtt","/home/user/Compliance_Reverse/sixth/MEDDAD~1.MP4")}[PROFILE]
 FIGS=importlib.import_module(FIG_MOD).FIGS
 os.makedirs(FIG_DIR,exist_ok=True)
 CROPS={"xl":(0,95,1675,990),"top":(0,290,1675,700),"full":(0,0,1920,1080),"popup":(350,380,1350,1080),
@@ -29,7 +30,10 @@ REDACT={"redact_wide":[(77,345,163,835),(1051,345,1167,835)],
         "email":[(254,312,1075,800)],
         # Feedback: free-text patient comments (and the formula bar, which echoes the selected comment).
         "raw":[(838,280,1675,895)],
-        "all":[(240,200,1660,250),(330,330,965,895)]}
+        "all":[(240,200,1660,250),(330,330,965,895)],
+        # RTT: NHS numbers in the RTT list and the Power Query preview.
+        "rtt":[(25,288,142,895)],
+        "pq":[(360,212,545,895)]}
 def redact(im,boxes):
     for b in boxes:
         im.paste(im.crop(b).filter(ImageFilter.GaussianBlur(9)),b[:2])
