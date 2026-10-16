@@ -1,0 +1,166 @@
+[00:00:04-00:00:06] By the day rush, happy well.
+[00:00:08-00:00:13] This is a point of order. I just recorded a video, spent half an hour doing it and...
+[00:00:13-00:00:14] Didn't some.
+[00:00:15-00:00:16] Yeah.
+[00:00:17-00:00:22] share my screen so that's a waste of time in it. But still let's see if we can have some more success with this one.
+[00:00:23-00:00:26] So I'm going to turn my camera off. I'm going to share my screen.
+[00:00:28-00:00:29] Uhh...
+[00:00:33-00:00:37] share the right screen I think might be good.
+[00:00:40-00:00:42] Right, let's unshell that a minute.
+[00:00:43-00:00:46] Make sure we share and correct the screen.
+[00:00:48-00:00:48] One.
+[00:00:53-00:00:53] Okay.
+[00:00:54-00:00:54] Perfect.
+[00:00:56-00:00:57] So, um...
+[00:00:58-00:01:04] I'm going to run you through how we update the Datastore.
+[00:01:05-00:01:08] for the majority of the compliance dashboard.
+[00:01:09-00:01:11] what we call the compliance dashboard.
+[00:01:12-00:01:13] Um
+[00:01:14-00:01:19] This particular area of the compliance data is called staff management.
+[00:01:21-00:01:23] and
+[00:01:25-00:01:27] I'll take you through how
+[00:01:29-00:01:31] This is set up first of all.
+[00:01:32-00:01:33] Um
+[00:01:35-00:01:36] and hopefully it...
+[00:01:37-00:01:46] will become clear how the tool works. So we call this a user input tool. This is just an Excel spreadsheet that is really designed to inform.
+[00:01:47-00:01:49] the compliance data.
+[00:01:50-00:01:54] I just want to get rid of something I did on my...
+[00:01:55-00:01:57] I'm like bored if...
+[00:02:01-00:02:02] and my important attempt.
+[00:02:03-00:02:05] There you go.
+[00:02:07-00:02:08] Okay.
+[00:02:09-00:02:12] yeah that links to
+[00:02:12-00:02:13] this it
+[00:02:14-00:02:16] reads and writes from the data store.
+[00:02:17-00:02:18] uh
+[00:02:19-00:02:24] So it's kind of a semi-automated update process.
+[00:02:24-00:02:28] I think I've seen either data store, so you've seen all the tables that...
+[00:02:29-00:02:33] that I've built out of this, out of the various tools.
+[00:02:34-00:02:37] So let me go through the tool first of all.
+[00:02:38-00:02:39] So, um...
+[00:02:42-00:02:45] the kind of setup that is required.
+[00:02:47-00:02:51] before we can start writing to the datastore.
+[00:02:52-00:02:53] B
+[00:02:54-00:02:58] First of all to fill in this tab that says names.
+[00:03:01-00:03:02] Now,
+[00:03:05-00:03:07] This acts as
+[00:03:09-00:03:10] data.
+[00:03:12-00:03:17] for the date store and also just the convenient method of.
+[00:03:17-00:03:22] storing data for these people.
+[00:03:22-00:03:30] This is staff management, so all the names of staff. If it was the estates update tool, all the names would be sites.
+[00:03:31-00:03:32] Um
+[00:03:33-00:03:41] if it was medical devices, all these have been medical devices. There are very few of these columns which are actually essential to the data store.
+[00:03:41-00:03:44] The first is the name.
+[00:03:45-00:03:45] um
+[00:03:47-00:03:49] those unknowns can be taken out.
+[00:03:51-00:03:51] Um
+[00:03:56-00:03:58] I'm not sure.
+[00:03:59-00:04:01] managed by is essential
+[00:04:03-00:04:06] I don't think it is, but it might be.
+[00:04:07-00:04:07] Um
+[00:04:09-00:04:11] All these are information.
+[00:04:13-00:04:15] up until we get to...
+[00:04:16-00:04:23] this column here, which is active. So we can set this as true or false. And if it's true,
+[00:04:24-00:04:26] It will be...
+[00:04:27-00:04:32] It will be featured in the visuals on the dashboard because one of the filters is this.
+[00:04:33-00:04:37] is that active is true to show the data in there.
+[00:04:38-00:04:41] so we can switch people on and off as we need to.
+[00:04:42-00:04:47] These cards, I'm not sure if these are essential, but what they do is...
+[00:04:48-00:04:49] Um,
+[00:04:50-00:04:51] is they
+[00:04:52-00:04:54] tell us how many
+[00:04:55-00:04:57] compliance areas have been set up.
+[00:04:58-00:04:59] for a particular.
+[00:05:00-00:05:01] person.
+[00:05:01-00:05:04] and how many compliance areas there are in total.
+[00:05:07-00:05:13] And there would be reasons why we didn't set up some of these, which you'll see in a minute.
+[00:05:14-00:05:16] this column here.
+[00:05:19-00:05:27] is something we were working on, I think, to try and add some more functionality to it, but it wasn't actually needed in the end, so you can ignore that.
+[00:05:28-00:05:29] So let's
+[00:05:30-00:05:31] Say we have a new
+[00:05:34-00:05:38] contractor or member of staff we want to
+[00:05:40-00:05:44] We want to add, we'll call the person testy tester.
+[00:05:45-00:05:50] this person will be a freelance contractor so they're not actually managed by anybody.
+[00:05:52-00:05:54] They'll be a contractor.
+[00:05:55-00:06:03] and they are what we call a gypsy which is a GP with special interest so there'll be a clinician we're gonna
+[00:06:04-00:06:08] we're gonna make this person of a septomy.
+[00:06:09-00:06:10] of a sectomist.
+[00:06:10-00:06:22] someone who carries out vasectomies either on a self-pay or NHS basis. They could equally carry out carpal tunnel, minor skin or they could be a nurse.
+[00:06:23-00:06:23] and we want
+[00:06:24-00:06:26] whatever they are is going to govern what.
+[00:06:27-00:06:34] different areas of staff management compliance are set up for them, which you will see in a minute.
+[00:06:36-00:06:38] I don't particularly want to fill in on this.
+[00:06:39-00:06:42] do want to tell the date you're stored.
+[00:06:43-00:06:46] if they're active or not, so they are active.
+[00:06:47-00:06:54] I'm going to say they're active again. We don't have to put this in but I'm going to put it in anyway from the 1st of August.
+[00:06:56-00:07:04] We haven't set any compliance areas up yet. There are 22 compliance areas we could conceivably set up for that person.
+[00:07:07-00:07:08] Um
+[00:07:11-00:07:12] So...
+[00:07:13-00:07:15] we would also want to do is.
+[00:07:16-00:07:19] set up something called compliance time frames.
+[00:07:21-00:07:27] Now compliance timeframes list all the different compliance types that fall in.
+[00:07:28-00:07:29] to stuff, man.
+[00:07:31-00:07:32] though
+[00:07:32-00:07:33] Um.
+[00:07:38-00:07:39] and I hope
+[00:07:39-00:07:41] fall into
+[00:07:42-00:07:45] main compliance group which is people.
+[00:07:46-00:07:49] So we've got people operations in clinical.
+[00:07:50-00:07:56] and all of the compliance areas will fall into one of those.
+[00:07:57-00:07:59] the subgroup
+[00:08:00-00:08:01] is listed.
+[00:08:02-00:08:02] um
+[00:08:06-00:08:08] This is listed as accreditation prep well.
+[00:08:10-00:08:12] I think that was a change that...
+[00:08:14-00:08:15] was proposed.
+[00:08:15-00:08:16] Um
+[00:08:18-00:08:20] They're generally non-core things.
+[00:08:21-00:08:22] Um
+[00:08:27-00:08:32] Core and non-core requirements are listed.
+[00:08:32-00:08:34] I don't necessarily agree with these.
+[00:08:35-00:08:36] Um
+[00:08:37-00:08:41] because I think accreditation should be cool.
+[00:08:41-00:08:47] Performance review should be core. Matt very much decided these on his own.
+[00:08:48-00:08:49] (static)
+[00:08:50-00:08:54] So I think these should actually all be staff requirements.
+[00:08:54-00:08:59] And then we were going to use this for onboarding as well.
+[00:09:00-00:09:16] We no longer do routine leave, so I'm not sure we actually need the onboarding things, but Richard might decide actually we should be using it as a business for onboarding and there should be an area of compliance that shows onboarding, but that was never developed properly.
+[00:09:17-00:09:23] And then there's compliance group three and four. So what Matt was trying to do was try to intermesh
+[00:09:23-00:09:25] all these different things.
+[00:09:26-00:09:29] So, for example, he's arguing that if someone doesn't have.
+[00:09:30-00:09:35] especially identity insurance, it affects our fitness to practice school.
+[00:09:35-00:09:39] and our clinical score. I think the current feeling is that...
+[00:09:40-00:09:42] these areas should have
+[00:09:43-00:09:45] have a main compliance group and a subgroup.
+[00:09:46-00:09:46] but not.
+[00:09:47-00:09:48] other groups.
+[00:09:49-00:09:52] it doesn't seem to make any sense in most cases to do that.
+[00:09:54-00:09:57] But again, that's probably something Richard needs to make a call on.
+[00:09:59-00:10:01] I don't know what these look-ups are for.
+[00:10:03-00:10:04] Um
+[00:10:06-00:10:10] I imagine they may be pulled through into some of the tables.
+[00:10:11-00:10:16] Missing again, that doesn't explain what that actually means.
+[00:10:17-00:10:18] on cat.
+[00:10:19-00:10:23] XLOOKUP conquer add requirements name.
+[00:10:24-00:10:25] plots type.
+[00:10:25-00:10:28] I think it's saying is it in the requirements or not.
+[00:10:30-00:10:32] and these thresholds are
+[00:10:33-00:10:34] for um
+[00:10:36-00:10:39] the visuals in the dashboard.
+[00:10:40-00:10:54] And depending on what percentage compliance is at, it controls the conditional format in the color of the gauge visual. So if it's more, if it's between naught point, if it's above naught point nine.
+[00:10:54-00:10:56] It's going to be green.
+[00:10:56-00:11:02] If it's below 0.6 it's going to be red and then shades in between.
+[00:11:03-00:11:05] Again, that was something that did.
+[00:11:05-00:11:10] he decided on what those thresholds were going to be.
+[00:11:11-00:11:11] Um
+[00:11:13-00:11:15] Now this table...
+[00:11:17-00:11:20] Each one of these tools has a table.
+[00:11:21-00:11:25] and then when the data is refreshed for the first time.
+[00:11:27-00:11:29] these compliance
+[00:11:30-00:11:34] Time frame tables are built through power queries by referencing
+[00:11:35-00:11:36] That's all.
+[00:11:37-00:11:41] So for example we've got...
+[00:11:43-00:11:46] We should have a staff management.
+[00:11:50-00:11:53] clients table there we go
+[00:11:54-00:12:01] So there is the compliance table and it's pulled all these in to use in building the final table.
+[00:12:06-00:12:06] Um.

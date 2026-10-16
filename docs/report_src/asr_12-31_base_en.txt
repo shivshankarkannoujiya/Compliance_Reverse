@@ -1,0 +1,238 @@
+[00:12:06-00:12:06] Um
+[00:12:09-00:12:11] So we've set that up.
+[00:12:13-00:12:13] *sigh*
+[00:12:16-00:12:17] Rose
+[00:12:17-00:12:20] I'm not sure this is actually
+[00:12:20-00:12:21] use the tool
+[00:12:24-00:12:25] Um
+[00:12:29-00:12:34] So I'm not sure why that is there. I don't think it's essential. (buzzer)
+[00:12:37-00:12:39] to be honest that it might be.
+[00:12:41-00:12:44] So we've got our compliance time frame set up.
+[00:12:45-00:12:48] We now need our requirements.
+[00:12:51-00:12:57] So our requirements are going to be individual for each of our names.
+[00:12:58-00:13:10] So in this case for each contractor or staff member, if it was a state of the each individual state site, if it was medical devices, each individual device, etc.
+[00:13:11-00:13:16] So we're first going to set up the requirements.
+[00:13:18-00:13:19] Now.
+[00:13:21-00:13:25] By adding "Testy Tester" to the names term, it should now come up.
+[00:13:26-00:13:30] in our drop-downs. So there is Testy Tester.
+[00:13:31-00:13:32] and
+[00:13:32-00:13:38] just so I can check if we've actually set up anything for test test test. (buzzer)
+[00:13:38-00:13:40] you can see we haven't had.
+[00:13:41-00:13:43] So this stuff is...
+[00:13:43-00:13:44] Oh
+[00:13:45-00:13:47] referencing other tables.
+[00:13:50-00:13:55] This allows us to change a requirement that's already been set up.
+[00:13:56-00:14:01] using visual basic. These columns were originally hidden I think.
+[00:14:02-00:14:07] they help update the table I believe or maybe even the visual basic
+[00:14:08-00:14:09] ahhhhh
+[00:14:10-00:14:15] We can obviously let you see the visual basics and your copies of these tools so you can see what the VP is doing.
+[00:14:16-00:14:18] So, um,
+[00:14:18-00:14:21] If I click list missing, visual basic.
+[00:14:21-00:14:24] will show me for test testa.
+[00:14:26-00:14:29] which of these groups I had set up should be all of them.
+[00:14:30-00:14:33] and they are, so they'll be all 22 possible.
+[00:14:35-00:14:39] criteria I can set up or compliance type I can set up for test your tester.
+[00:14:41-00:14:42] Sorry
+[00:14:44-00:14:45] Um
+[00:14:48-00:14:50] Why is that not sure that's
+[00:14:50-00:14:54] So now I'm going to set up all these individual requirements.
+[00:14:55-00:14:58] So this is of a sexa-free clinician. This, again, is...
+[00:14:59-00:15:01] Again, I'm not sure.
+[00:15:02-00:15:04] that actually means anything.
+[00:15:05-00:15:09] I don't think it actually uses this, I never use it, I just use the name.
+[00:15:10-00:15:15] So personal indemnity insurance will certainly need, I think that's a cool requirement.
+[00:15:17-00:15:20] They should have a professional registration.
+[00:15:20-00:15:24] if they're a doctor because these people will be GPS. I think that's core. (buzzer buzzes)
+[00:15:26-00:15:33] That's accreditation whether need to be accredited every two years by provide well-being. That is a core policy.
+[00:15:35-00:15:40] CTS, they're not doing cut maternal, they're not doing my skin.
+[00:15:41-00:15:42] They're not doing anything.
+[00:15:44-00:15:45] Day
+[00:15:46-00:16:05] Performance review, they will need so they'll have a performance review with someone from the operations team to assess their performance. I think that's core standard DBS. They're not going to need because they're going to have an enhanced DBS and that is a core requirement, I think, because we can't let people.
+[00:16:06-00:16:12] loose on the public who we haven't seen a DBS for.
+[00:16:12-00:16:23] Vazmenta review or CPD. This will be discussed through reaccreditation and contract means of performance review so it's going to be needed but it's not core.
+[00:16:25-00:16:32] not going to need the same for CTS, not going to need the same for my skin.
+[00:16:36-00:16:37] I was carrying on with this.
+[00:16:39-00:16:41] slow actions.
+[00:16:42-00:16:45] That's peer reviews are...
+[00:16:46-00:16:48] recommended but
+[00:16:50-00:16:51] not.
+[00:16:53-00:16:54] Cool
+[00:16:55-00:16:59] CTS peer review, sorry not cool.
+[00:17:00-00:17:01] going to be records.
+[00:17:03-00:17:07] reflective review is required but it's not cool.
+[00:17:08-00:17:18] minor skin peer review not going to be required. CTS practical main decision not required. Minor skin practical main decision not required. That is practical.
+[00:17:19-00:17:20] is required.
+[00:17:22-00:17:24] bit of an uncool risk.
+[00:17:24-00:17:32] Medical appraisal is going to be required. I would suggest this call as his medical re-vanidation.
+[00:17:33-00:17:39] I suggest that's cool. And if they're a business, we'll need to pass them through in a little 35.
+[00:17:39-00:17:40] so
+[00:17:41-00:17:47] I'm going to suggest that Tisty Tister does try it under a company name rather than
+[00:17:47-00:17:52] just a free larch sole proprietor or whatever and I would suggest that that's cool.
+[00:17:53-00:17:58] So now I'm going to write this into the requirements data.
+[00:17:59-00:18:01] which is the done by Vision Basic.
+[00:18:04-00:18:07] So that is now going to write those in.
+[00:18:20-00:18:22] So that now.
+[00:18:22-00:18:25] written into this table here.
+[00:18:26-00:18:28] So there's testy tester.
+[00:18:29-00:18:38] And there's all the things that we've written in. So name, compliance type, if it's required or not, if it's called.
+[00:18:39-00:18:42] Again, I think we're going to use this for onboarding.
+[00:18:43-00:18:44] managed by
+[00:18:46-00:18:47] Not sure.
+[00:18:55-00:19:00] though it probably actually be provided well-being for everybody.
+[00:19:00-00:19:03] So actually let's add
+[00:19:03-00:19:05] vibe well pinned in there.
+[00:19:09-00:19:13] Yeah, that's now added into this. So that's just looking that up. (buzzer buzzes)
+[00:19:14-00:19:18] Unique look up I believe is needed for
+[00:19:19-00:19:19] Oh
+[00:19:20-00:19:21] the
+[00:19:22-00:19:24] table it's going to bill for compliance.
+[00:19:25-00:19:26] compliance
+[00:19:27-00:19:31] time frame so that's how often these things should be checked and
+[00:19:32-00:19:33] and whether the
+[00:19:34-00:19:36] person is active or not.
+[00:19:41-00:19:50] So now I'm going to save that because when I refresh my data eventually after I've done my full update of this for the month.
+[00:19:50-00:19:54] I'm going to want my compliance data.
+[00:19:55-00:19:57] to build its tables from the data that's in here.
+[00:19:58-00:20:01] and it can't if I've not saved it.
+[00:20:03-00:20:05] So now I can go in and feel any
+[00:20:06-00:20:06] *sigh
+[00:20:10-00:20:13] any information that I have on test test stuff.
+[00:20:14-00:20:16] so I can now do the compliance record.
+[00:20:19-00:20:21] So, P.I. Insurance.
+[00:20:23-00:20:24] gonna say
+[00:20:24-00:20:26] I've seen
+[00:20:28-00:20:35] It starts from the 1st of June and goes through to the 31st of May next year.
+[00:20:38-00:20:40] should write in the notes.
+[00:20:41-00:20:44] if I put certificate on file.
+[00:20:45-00:20:52] And then I can do these all in one go if I want. It doesn't like it to be the visual value if you miss a row.
+[00:20:53-00:20:57] I'll do test it test done
+[00:20:58-00:21:04] professional registration. I'll say I downloaded that from the GMC today.
+[00:21:05-00:21:08] I need to check that again in a year.
+[00:21:11-00:21:13] down there like on fire.
+[00:21:16-00:21:18] As a accreditation, well...
+[00:21:19-00:21:20] that's gonna need to be done.
+[00:21:21-00:21:26] to years we assume that all the Vaz bonafines were
+[00:21:26-00:21:27] Um
+[00:21:30-00:21:38] at before the condition was passed as fit to practice. So we'll take that from the day.
+[00:21:39-00:21:40] They started practice.
+[00:21:43-00:21:47] performance review the same we want that to flag.
+[00:21:47-00:21:49] after they've been with us a year.
+[00:21:51-00:21:55] So again, started to practice on the 1st of August.
+[00:21:55-00:21:59] so that will come forward in a year.
+[00:22:01-00:22:03] and heart DBS
+[00:22:07-00:22:12] So we did that as part of the onboarding process. We saw that on the 15th of July.
+[00:22:15-00:22:18] Less mental or security is not going to be done.
+[00:22:19-00:22:28] peer review won't be surgical reflective review won't be, Vaz practical mental session won't be medical appraisal well.
+[00:22:29-00:22:30] You see one of those.
+[00:22:31-00:22:35] should have been provided at onboarding the cusse
+[00:22:36-00:22:44] I should have one every year and we'll say that happened on the 1st of June, so we need to chase for another one in a year.
+[00:22:45-00:22:49] and then medic revalidation.
+[00:22:50-00:22:53] should happen every 5 years for a doctor.
+[00:22:55-00:23:00] So we saw that happen on the first of March.
+[00:23:01-00:23:09] last year so we need to mark that as reviewable in five years from that date and lastly, I a 35.
+[00:23:10-00:23:14] this person that should have been completed.
+[00:23:14-00:23:18] before they start practicing so again, I assume that was done.
+[00:23:19-00:23:20] as I'm toting.
+[00:23:24-00:23:25] Okay.
+[00:23:25-00:23:28] So we feel little that we can.
+[00:23:28-00:23:31] So we'll now.
+[00:23:31-00:23:37] use the visual basic to add the record to the compliance.
+[00:23:37-00:23:38] data.
+[00:23:45-00:23:48] Okay, so that has now
+[00:23:49-00:23:51] reference in our window there.
+[00:23:52-00:23:53] And that is
+[00:23:53-00:23:56] just performing a series of look-ups.
+[00:23:57-00:23:58] on
+[00:23:58-00:24:00] The compliance data tab of this.
+[00:24:01-00:24:03] So if we look at test test down
+[00:24:05-00:24:06] see that
+[00:24:07-00:24:08] Um.
+[00:24:11-00:24:11] It's perfect.
+[00:24:12-00:24:13] It's written in.
+[00:24:14-00:24:15] the core data.
+[00:24:16-00:24:19] and then series of formulas.
+[00:24:19-00:24:20] there
+[00:24:22-00:24:26] in order to build the various tables we need to build them once we've finished updating.
+[00:24:29-00:24:29] Um
+[00:24:30-00:24:37] If we input some data and it happens to be wrong, so let's say I actually the
+[00:24:38-00:24:43] P.I. insurance went from the first and may not first June.
+[00:24:43-00:24:52] We can use this section here to alter it. So the first of May, the difference is going to change to the first of May, which remains.
+[00:24:52-00:24:55] The two dates gonna have to change. Oops.
+[00:24:59-00:25:06] We can also delete that record if we want to. So, when we add a new...
+[00:25:08-00:25:11] piece of the plant's data that adds it in.
+[00:25:12-00:25:13] to the record.
+[00:25:13-00:25:19] So we can build up a picture over time of what's happened with compliance.
+[00:25:20-00:25:23] if we've got an existing compliance.
+[00:25:23-00:25:29] set up but we just need to model for that we do it like this.
+[00:25:29-00:25:32] so at the moment for PI insurance.
+[00:25:33-00:25:33] Ahh.
+[00:25:34-00:25:36] It goes from the 6th of the 1st.
+[00:25:37-00:25:42] 26 and 6th, that was already first and the 6th to the first and the 6th.
+[00:25:43-00:25:44] if I now amend it.
+[00:25:52-00:25:56] Okay, that has now amended that to the first of my, so that has overwritten that.
+[00:25:58-00:25:59] data.
+[00:26:01-00:26:02] hopefully
+[00:26:03-00:26:04] You can see that.
+[00:26:06-00:26:08] There you go, PI insurance, first of May.
+[00:26:10-00:26:12] inspires first and main next year.
+[00:26:14-00:26:15] So
+[00:26:16-00:26:17] Um.
+[00:26:18-00:26:23] the process every month would then be to update as much as we can.
+[00:26:24-00:26:31] Anything we can't update, obviously we would make contact with the various conditions, staff members.
+[00:26:32-00:26:36] we will impose any answers as we get back. And then when we're ready...
+[00:26:38-00:26:40] We were to form
+[00:26:40-00:26:47] data update that enables the tables to be built that will then inform the dashboard.
+[00:26:47-00:26:48] Sorry.
+[00:26:49-00:26:50] We would save.
+[00:26:51-00:26:59] the data still first in our part of our process because what it's going to do is it's going to use.
+[00:26:59-00:27:00] data saved here
+[00:27:02-00:27:05] Plus it's going to pull in data from other user input tools.
+[00:27:06-00:27:11] to build up the requirements and the time frame tables first of all.
+[00:27:12-00:27:13] so
+[00:27:14-00:27:16] we would do a day to refresh.
+[00:27:17-00:27:18] Um.
+[00:27:19-00:27:27] which can take a little while remotely unfortunately usually it does it in five or six seconds in the office.
+[00:27:27-00:27:35] the transfer speed via the VPN doesn't appear to be very good. So.
+[00:27:35-00:27:37] We would do one refresh.
+[00:27:38-00:27:39] We were then safe. (buzzer
+[00:27:40-00:27:42] We would then do another refresh.
+[00:27:43-00:27:44] and then save
+[00:27:46-00:27:49] The other thing we would do is.
+[00:27:50-00:27:51] we would update.
+[00:27:53-00:27:54] The last updated tab.
+[00:27:57-00:28:03] Now there is visual basic in the tools that should do this on tenacity for us.
+[00:28:04-00:28:08] But some of the visual basics not working in that respect.
+[00:28:09-00:28:15] We're not sure why we have when it passed Chris Wright. He said, I'm pretty good with your basic envelope. He couldn't.
+[00:28:16-00:28:18] he couldn't debug it.
+[00:28:21-00:28:22] And then when we've done that
+[00:28:24-00:28:30] The tables will be or built the power screws would have built those tables. So I'm going to stop that.
+[00:28:32-00:28:33] I don't particularly want.
+[00:28:34-00:28:34] tonight.
+[00:28:35-00:28:37] Test you tests her in any way.
+[00:28:38-00:28:38] Um
+[00:28:39-00:28:40] and then we would save
+[00:28:41-00:28:42] the
+[00:28:44-00:28:45] We will save the data.
+[00:28:46-00:28:48] So I'm just gonna make
+[00:28:49-00:28:50] Testy tester
+[00:28:51-00:28:52] not not active
+[00:29:03-00:29:10] So next time it builds a requirement to tell you that you might not have tested it as serenity because it's not active. What we'll have it in but it will show it as inactive.
+[00:29:11-00:29:11] Um
+[00:29:13-00:29:19] Then when I close that, as I say, there is some visual basics. So do you want to update the last updated date?
+[00:29:20-00:29:22] That's work for some reason.
+[00:29:22-00:29:27] That's something we need to do, but if we have to fill it in manual, it's not a big deal.
+[00:29:28-00:29:28] Uh...
+[00:29:29-00:29:33] Now we don't save this stage because what happens is
+[00:29:34-00:29:43] that with some of these, it closes the compliance data before it closes this and then these formulas which are just lookups.
+[00:29:43-00:29:44] can corrupt.
+[00:29:46-00:29:49] and then it will also metal it starts a data update again.
+[00:29:50-00:29:54] because it looks that's going to help for another day so it might look quite quickly who knows
+[00:29:58-00:30:01] Probably not, so I'm gonna step the refresh.
+[00:30:04-00:30:06] and then I'm going to close that.
+[00:30:11-00:30:12] We'll side it
+[00:30:29-00:30:29] so
+[00:30:30-00:30:32] That's about it.
+[00:30:33-00:30:42] That's about it, D'Raj. I'll send you the video together with a list of the compliance areas for which we...
+[00:30:42-00:30:47] use that method and I'll recall some videos for the ones that we don't.
+[00:30:47-00:30:50] so you can see those in action as well.
+[00:30:51-00:30:54] Okay, see you again, bye bye.
