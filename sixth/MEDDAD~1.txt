@@ -1,0 +1,41 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Hi Dheeraj, this is another video to show you how we update compliance data for for RTT, so this RTT compliance for the whole of Provide Wellbeing. Again, as with incidents management, there's no need for names because we've just got the one entity that we're monitoring here, which is Provide Wellbeing. So this is the requirements table, which we build or built manually. 
+
+It's got a compliance type, which is each service, if it's required or not, if it's a core requirement, it is any notes, there is no notes, and then a unique look up, which again, helps to identify it within the compliance data, and whether it's active or not, it's all active, we can switch off services here if we want to. Compliance timeframes table again, which is common to all. This, we've got our compliance type, which is RTT for each of these services. 
+
+We've got every X months where we update this every week, so it's four times a month. Core requirement, it goes into the operational compliance group. So operational people or clinical, it's operational, and the compliance group is RTT compliance. 
+
+You need to look up again, so it can be identified within the data. I just copied that from the previous sheet, and there are thresholds which will control our conditional formatting on the visual, so it will be green if it's 100%. If it's less than 92, it will be red and then shades in between.
+
+So how does this work? Well, it pulls in data from another file, which is our RTT breach report, which is a report that we complete once a week for the operational teams. So it uses a table which is actually constructed from, it's constructed from data that is downloaded from system one. It's then put into the file. 
+
+It allows us to analyse RTTs to give some insight as to how breaches can be prevented, et cetera, for the operational teams. So that pulls that in. It then refreshes that, goes into the table. 
+
+We've just got NHS number, breach date, the service, what week, column 43. What's column 43? Yeah, can't actually remember, but the important one is this breach date and the RTT week. Actually, that, oh, yeah, so the breach date, sorry, is artificially calculated.
+
+That actually doesn't have to be that because the RTT is the only difference, so we're going to change that formula. So we don't actually have to, so we don't need a breach date to actually, so we'll delete that. Of course, that's going to, sorry about these running repairs. 
+
+Okay. And we probably want that to round up, actually thinking about it. Or do we want it to round down? No, actually, we'll have it to round down, I think.
+
+That's better. Actually, and there we go. Yeah, so from that table, we have our compliance data. 
+
+So this is provide wellbeing, this is a compliance type, this is a completion date, which is today. This is the completion status, which is going to be completed all the time. This is our RAG rating. 
+
+So this works on what this percentage is. So if it's less than 92%, it's going to give us a RAG rating of two, which is not compliant. Otherwise, it gives us a RAG rating of 10, which is compliant.
+
+It constructs a notes column from how many patients are not compliant. It just does a count of the RTT list. So anybody looking at a dashboard can see how many patients are being talked about. 
+
+Due date is the completion date plus seven days. It's operational. It's RTT compliance.
+
+The waiting is always in there. Every waiting seems to be one that I've seen. I don't know why that's in there. 
+
+Only Matt knows. It always seems to be one, but it's copied in. So when that's been constructed, we simply, again, copy this data into our compliance data, which I must have accidentally closed. 
+
+Just amuse yourself. Have a sip of my coffee. So we'll copy it and paste it into the bottom of our compliance data. 
+
+We'll fill in our last updated. It should be today. Excuse me. 
+
+We would save, refresh the tables twice, and it then builds all the tables, which goes into building up our final table for the dashboard to read off. So that is RTT compliance data. Cheers, Dheeraj.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
