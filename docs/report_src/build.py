@@ -20,7 +20,8 @@ PROFILES = {"staff": ("figures", "content", "figs"),
             "incidents": ("figures_incidents", "content_incidents", "figs_incidents"),
             "complications": ("figures_complications", "content_complications", "figs_complications"),
             "training": ("figures_training", "content_training", "figs_training"),
-            "feedback": ("figures_feedback", "content_feedback", "figs_feedback")}
+            "feedback": ("figures_feedback", "content_feedback", "figs_feedback"),
+            "rtt": ("figures_rtt", "content_rtt", "figs_rtt")}
 _FIG_MOD, _CONTENT_MOD, FIG_DIR = PROFILES[PROFILE]
 FIGS = importlib.import_module(_FIG_MOD).FIGS
 C = importlib.import_module(_CONTENT_MOD)
