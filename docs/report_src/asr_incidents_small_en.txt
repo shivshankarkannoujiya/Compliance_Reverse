@@ -1,0 +1,93 @@
+[00:00:05-00:00:06] D-Rash.
+[00:00:07-00:00:08] me again.
+[00:00:09-00:00:12] So I'm going to make a video now to.
+[00:00:13-00:00:15] show how uh
+[00:00:16-00:00:17] We update.
+[00:00:18-00:00:23] compliance for incidents, which I think I might have included on the list of the last video.
+[00:00:24-00:00:29] as one of the ones that was a standard.
+[00:00:30-00:00:30] Day
+[00:00:32-00:00:34] Did I do that by mistake?
+[00:00:34-00:00:36] Oh, I didn't ask it. Excellent.
+[00:00:38-00:00:38] Um
+[00:00:41-00:00:44] So I will share my screen.
+[00:00:45-00:00:48] and I'll show you how this one is updated.
+[00:01:08-00:01:10] I hope that's sharing.
+[00:01:11-00:01:12] just try again
+[00:01:14-00:01:18] record a video and then find its knock.
+[00:01:19-00:01:20] Sharing.
+[00:01:24-00:01:25] That's more like it.
+[00:01:30-00:01:31] today.
+[00:01:31-00:01:34] So this is the, excuse me.
+[00:01:35-00:01:37] This is the input tool.
+[00:01:38-00:01:48] that we use. It doesn't work in the same way as the other ones that I did the video for last time. We don't need a names.
+[00:01:50-00:01:53] tag for this one because
+[00:01:54-00:02:00] there's only one name and that's Provide Wellbeing. So we're looking at incidents for Provide Wellbeing.
+[00:02:02-00:02:02] Um
+[00:02:05-00:02:09] So this is the requirements table which we can build manually.
+[00:02:10-00:02:12] So we've got our.
+[00:02:13-00:02:17] different compliance types that are set up for incidents.
+[00:02:19-00:02:21] They're all required to be reported.
+[00:02:22-00:02:24] They're all core requirements.
+[00:02:25-00:02:26] There's no notes.
+[00:02:28-00:02:35] There's a lookup there which gets pulled through into the requirements table in the compliance data, I think which acts.
+[00:02:36-00:02:39] as some kind of look up to build those tables.
+[00:02:41-00:02:46] and they'll all be active all the time and we can manually switch them off.
+[00:02:47-00:02:50] for any reason or we could add other ones on I guess.
+[00:02:51-00:02:57] So that's our requirements table. So you remember for the last time we had a names, a requirements.
+[00:02:57-00:03:08] and a compliance time frames table. So names we don't actually need because there's only one name and the name is provide wellbeing. This is the requirements table.
+[00:03:08-00:03:17] This is the compliance table, compliance timeframes table, sorry. So the compliance type, how often.
+[00:03:19-00:03:19] (groans
+[00:03:20-00:03:26] Yes, Matt said it for twice a month. We only look at this every month.
+[00:03:27-00:03:36] They're all core requirements. They fall into the compliance group operational. So that's one of the big three people.
+[00:03:36-00:03:38] operational and clinical.
+[00:03:39-00:03:41] The subgroup is incidents.
+[00:03:43-00:03:47] There's a lookup there, which pulls into the table.
+[00:03:49-00:03:57] missing again I'm not 100% sure what that does. I think it just checks to see that there's a requirement for it.
+[00:03:59-00:04:01] And then we have our thresholds for...
+[00:04:02-00:04:03] uh all
+[00:04:04-00:04:07] Visual, which is a dial based on percentage.
+[00:04:08-00:04:13] So if it's 100% it's going to show green.
+[00:04:14-00:04:16] if it's
+[00:04:17-00:04:19] anything less than that.
+[00:04:19-00:04:21] It's gonna show red.
+[00:04:22-00:04:23] That's how it's been set up
+[00:04:26-00:04:26] Umm...
+[00:04:28-00:04:29] We
+[00:04:31-00:04:35] Yeah, let me go through then the process of how we update it.
+[00:04:37-00:04:39] So how we update it is
+[00:04:41-00:04:41] this
+[00:04:43-00:04:46] is we download from Datex.
+[00:04:49-00:04:49] the
+[00:04:50-00:04:51] All of the.
+[00:04:52-00:04:54] incident tight so
+[00:04:56-00:04:59] from DataX to load it into there.
+[00:05:00-00:05:05] So in other words, and I'll need to
+[00:05:06-00:05:09] I'm assuming it will keep on sharing if I do this.
+[00:05:10-00:05:12] No, I don't think it will.
+[00:05:14-00:05:17] left I'll pull this over to here
+[00:05:19-00:05:21] Yeah, that should be sharing.
+[00:05:23-00:05:24] Uh...
+[00:05:24-00:05:25] So
+[00:05:26-00:05:28] We're just going to Datex.
+[00:05:36-00:05:39] and we go into the dashboard.
+[00:05:40-00:05:42] and then we pull out.
+[00:05:42-00:05:43] the [DATA
+[00:05:43-00:05:45] export for
+[00:05:48-00:05:49] Datex
+[00:06:01-00:06:04] and then we just copy and paste it.
+[00:06:04-00:06:05] into here
+[00:06:18-00:06:18] Okay.
+[00:06:20-00:06:26] There's a column there that puts it into a grouping. So it looks at the...
+[00:06:27-00:06:28] category category
+[00:06:30-00:06:32] which is over here.
+[00:06:33-00:06:36] and references that with the table.
+[00:06:37-00:06:40] and then it puts it into one of our categories.
+[00:06:41-00:06:44] So what we generally do when we copy it in...
+[00:06:45-00:06:47] is
+[00:06:48-00:06:50] is we'll check that column.
+[00:06:51-00:06:53] Oh look, #Rath. That's good isn't it?
+[00:06:55-00:06:56] they's fixing
+[00:07:00-00:07:00] Uh
+[00:07:01-00:07:04] I'm just going to pause the recording there, De Rauch.
+[00:07:05-00:07:06] uh
+[00:07:06-00:07:08] which I think I can do.

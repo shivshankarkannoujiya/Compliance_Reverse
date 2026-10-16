@@ -1,16 +1,29 @@
 # Report sources
 
-Generator for `../../01_Staff_Management/Staff_Management_Compliance_Workflow_Specification.pdf`.
+One generator builds the reports for every recording. `REPORT_PROFILE` picks the recording:
 
-- `figures.py` – figure manifest: id, video timestamp, workbook, tab, caption, crop.
-- `extract.py` – pulls each frame from the `.mp4` with ffmpeg at the exact timestamp and crops it (needs `git lfs pull` first).
-- `content.py` – report text and tables (sections 0–6, appendices).
-- `build.py` – ReportLab layout (title block, TOC, captions, tables).
-- `build_prereq.py` – companion PDF `01_Staff_Management/Staff_Management_PreBuild_Client_Requirements.pdf`
-  (files, sheets, VBA, rules and client decisions needed before build, with reasons and a sign-off checklist).
-- `figures/` – the extracted, verified screenshots as embedded in the PDF.
-- `asr_*.txt` – timestamped re-transcription of the video audio (Whisper small.en for 00:00–12:05, base.en after).
-  The supplied `.srt` belongs to a different meeting (135933, Incidents), so it was not used for timing.
+| Profile | Recording | Output folder |
+|---|---|---|
+| `staff` (default) | `first/…131142…mp4` (Staff Management) | `01_Staff_Management/` |
+| `incidents` | `second/…135933…mp4` (Incident Management / Datix) | `02_Incident_Management/` |
 
-Rebuild: `pip install reportlab pillow pymupdf` then `python3 extract.py && python3 build.py out.pdf && python3 build_prereq.py prereq.pdf`
-(`build.py` reads the `figs/` folder that `extract.py` creates next to it.)
+- `figures.py`, `figures_incidents.py`: figure manifests (id, video timestamp, workbook, tab, caption, crop, optional redaction).
+- `extract.py`: pulls each frame from the `.mp4` with ffmpeg at the exact timestamp, crops it and blurs redacted cells (needs `git lfs pull` first).
+- `content.py`, `content_incidents.py`: specification text and tables (sections 0–7, appendices).
+- `build.py`: ReportLab layout (title block, TOC, captions, tables).
+- `build_prereq.py` + `prereq_staff.py` / `prereq_incidents.py`: the pre-build client requirements PDF (files, sheets, VBA, rules and decisions, with reasons and a sign-off checklist).
+- `figures/`, `figures_incidents/`: the extracted, verified screenshots as embedded in the PDFs.
+- `asr_*.txt`: timestamped re-transcriptions of the audio (offline Whisper).
+  The `.srt` in `first/` belongs to the Incidents meeting (135933), so it was not used for timing there; it matches `second/`.
+
+Datix screenshots have the Name and Description cells blurred, because they hold patient narratives and personal names.
+
+Rebuild (from this folder):
+
+```
+pip install reportlab pillow pymupdf
+python3 extract.py && python3 build.py spec.pdf && python3 build_prereq.py prereq.pdf
+REPORT_PROFILE=incidents python3 extract.py
+REPORT_PROFILE=incidents python3 build.py spec.pdf && REPORT_PROFILE=incidents python3 build_prereq.py prereq.pdf
+```
+(`build.py` reads the `figs/` or `figs_incidents/` folder that `extract.py` creates next to it.)
