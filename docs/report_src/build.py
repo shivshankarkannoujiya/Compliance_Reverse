@@ -45,10 +45,13 @@ ss["callout"] = ParagraphStyle("callout", parent=ss["body"], backColor=WARN, bor
 
 
 class Doc(BaseDocTemplate):
-    def __init__(self, fn, **kw):
+    HEADER = "Staff Management Compliance Workflow — Technical Specification (Reverse-Engineered)"
+
+    def __init__(self, fn, title="Staff Management Compliance Workflow – Reverse-Engineering Specification", header=None, **kw):
         super().__init__(fn, pagesize=A4, leftMargin=15 * mm, rightMargin=15 * mm, topMargin=17 * mm, bottomMargin=16 * mm,
-                         title="Staff Management Compliance Workflow – Reverse-Engineering Specification",
-                         author="Reverse-engineering specification (generated)", **kw)
+                         title=title, author="Reverse-engineering specification (generated)", **kw)
+        if header:
+            self.HEADER = header
         fr = Frame(self.leftMargin, self.bottomMargin, self.width, self.height, id="f")
         self.addPageTemplates([PageTemplate(id="p", frames=[fr], onPage=self.deco)])
 
@@ -56,7 +59,7 @@ class Doc(BaseDocTemplate):
         if d.page == 1:
             return
         c.saveState(); c.setFont("DV", 7); c.setFillColor(MUTED)
-        c.drawString(15 * mm, A4[1] - 10 * mm, "Staff Management Compliance Workflow — Technical Specification (Reverse-Engineered)")
+        c.drawString(15 * mm, A4[1] - 10 * mm, self.HEADER)
         c.drawRightString(A4[0] - 15 * mm, A4[1] - 10 * mm, "Source: Teams recording 20260811_131142 (30:54)")
         c.setStrokeColor(RULE); c.line(15 * mm, A4[1] - 11.5 * mm, A4[0] - 15 * mm, A4[1] - 11.5 * mm)
         c.drawRightString(A4[0] - 15 * mm, 9 * mm, "Page %d" % d.page)

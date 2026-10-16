@@ -698,7 +698,9 @@ def section7(c):
 
     # 7.1 Prerequisites
     s += [H("7.1 Prerequisites from the business (before any build starts)", 1),
-          para("These are inputs only the business can supply. Without them the build would copy unknown behaviour or encode unconfirmed rules."),
+          para("These are inputs only the business can supply. Without them the build would copy unknown behaviour or encode unconfirmed rules. "
+               "They are expanded item by item (files, sheets, VBA, rules, decisions, plus a sign-off checklist) in the companion document "
+               "<b>Staff_Management_PreBuild_Client_Requirements.pdf</b> in the same folder."),
           table([
               ["ID", "What is required", "Why it is required"],
               ["P-01", "<b>Export of the full VBA project</b> from Staff Management.xlsm (all modules: List Missing, Add/Update Requirements, Add New / Update Existing Compliance, close/last-updated)",
