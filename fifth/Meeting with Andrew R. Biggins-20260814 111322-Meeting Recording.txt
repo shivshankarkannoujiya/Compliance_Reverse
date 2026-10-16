@@ -1,0 +1,25 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Hi Dheeraj. Okay, so this video is how we update our survey feedback compliance. Let me share my screen. 
+
+So the first thing that we do is we download our surveys from the survey platform, which is what we currently use to collect our data. Now there are four surveys, so these are 24-hour surveys basically asking people how is your experience out of five? Four and five is acceptable, lower than four is not. Would you recommend us to friends and family out of five? Four and five is acceptable, less than five is not. 
+
+So we download these surveys. We usually do a bit of a cleanup of the data. So here are surveys we downloaded for last month's update because some of them clearly don't, they click on the survey which actually registers a response, but they don't actually go ahead and fill in the survey. 
+
+So we cleanse them to a certain extent, so we get rid of any spoilt ones, and then we put them in this folder here. So there are four, one is self-pay, one is carpal tunnel, one is vasectomy, it's the carpal tunnel NHS, vasectomy NHS, and the other is neurodevelopmental NHS. So we save them all in there. 
+
+We then open this tool here, and again this was designed by Matt, so we just follow his process as he instructed us. We refresh the, oh sorry, it's actually, so it does a background query where it pulls the data in from those surveys. Okay, so it's having trouble finding something with that one for some reason, and then it builds a table up which is 24-hour surveys.
+
+Again, sorry for the vagueness, but as I say, we didn't build these things. We have our usual requirements and compliance timeframes. This is a bit confusing. 
+
+There is this file which we complete first, and then there is another update tool which is this one, survey management, which also has requirements and compliance timeframes. Again, so this actually looks as though it's pulling the same data, so I'm not even sure we need to complete the first one, because I think this actually does the same as the first one. It builds a table. 
+
+We have our requirements. We have our compliance timeframes as before, our thresholds, and then we have, similar to incidence management, a similar of statistical tables for friends and family, for neurodevelopmental, for CTS, for VAS, and for self-pay, and then NHS, all NHS, I guess that is, all surveys, and then we have CSAT scores for each one, and again, it's a case of pulling a date down, pulling the formulas down, and then it builds up a compliance table here based on the statistical data here. Again, we can send you all of these to analyse if you wish, and then again, we copy that into the compliance data, into the bottom here. 
+
+We update our last updated for feedback, which is there. We save it, refresh it twice. It builds up all the tables, and then hopefully, Bob's your uncle, you go to the dashboard, refresh, and it pulls in the latest data. 
+
+So, that is that. I hope that's clear. I'll carry on. 
+
+Cheers.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

@@ -1,0 +1,339 @@
+1
+00:00:04,360 --> 00:00:05,460
+(Transcribed by TurboScribe. Go Unlimited to remove this message.) Hi Dheeraj.
+
+2
+00:00:05,820 --> 00:00:10,540
+Okay, so this video is how we update
+
+3
+00:00:10,540 --> 00:00:13,780
+our survey feedback compliance.
+
+4
+00:00:17,320 --> 00:00:19,040
+Let me share my screen.
+
+5
+00:00:23,200 --> 00:00:25,780
+So the first thing that we do is
+
+6
+00:00:25,780 --> 00:00:35,560
+we download our surveys from the survey
+
+7
+00:00:35,560 --> 00:00:42,340
+platform, which is what we currently use to
+
+8
+00:00:42,340 --> 00:00:43,800
+collect our data.
+
+9
+00:00:47,310 --> 00:00:50,750
+Now there are four surveys, so these are
+
+10
+00:00:50,750 --> 00:00:58,170
+24-hour surveys basically asking people how is
+
+11
+00:00:58,170 --> 00:00:59,530
+your experience out of five?
+
+12
+00:00:59,910 --> 00:01:01,850
+Four and five is acceptable, lower than four
+
+13
+00:01:01,850 --> 00:01:02,290
+is not.
+
+14
+00:01:02,910 --> 00:01:05,410
+Would you recommend us to friends and family
+
+15
+00:01:05,410 --> 00:01:06,270
+out of five?
+
+16
+00:01:06,410 --> 00:01:09,370
+Four and five is acceptable, less than five
+
+17
+00:01:09,370 --> 00:01:10,190
+is not.
+
+18
+00:01:11,330 --> 00:01:12,730
+So we download these surveys.
+
+19
+00:01:18,320 --> 00:01:22,800
+We usually do a bit of a cleanup
+
+20
+00:01:22,800 --> 00:01:23,580
+of the data.
+
+21
+00:01:24,000 --> 00:01:28,480
+So here are surveys we downloaded for last
+
+22
+00:01:28,480 --> 00:01:38,120
+month's update because some of them clearly
+
+23
+00:01:38,120 --> 00:01:41,880
+don't, they click on the survey which actually
+
+24
+00:01:41,880 --> 00:01:43,820
+registers a response, but they don't actually go
+
+25
+00:01:43,820 --> 00:01:44,940
+ahead and fill in the survey.
+
+26
+00:01:46,060 --> 00:01:48,820
+So we cleanse them to a certain extent,
+
+27
+00:01:49,280 --> 00:01:51,440
+so we get rid of any spoilt ones,
+
+28
+00:01:52,800 --> 00:01:56,200
+and then we put them in this folder
+
+29
+00:01:56,200 --> 00:01:56,940
+here.
+
+30
+00:01:57,240 --> 00:01:58,240
+So there are four, one is self-pay,
+
+31
+00:01:58,340 --> 00:02:02,800
+one is carpal tunnel, one is vasectomy, it's
+
+32
+00:02:02,800 --> 00:02:09,259
+the carpal tunnel NHS, vasectomy NHS, and the
+
+33
+00:02:09,259 --> 00:02:12,360
+other is neurodevelopmental NHS.
+
+34
+00:02:14,040 --> 00:02:15,920
+So we save them all in there.
+
+35
+00:02:16,020 --> 00:02:17,520
+We then open this tool here, and again
+
+36
+00:02:17,520 --> 00:02:20,280
+this was designed by Matt, so we just
+
+37
+00:02:20,280 --> 00:02:27,920
+follow his process as he instructed us.
+
+38
+00:02:32,080 --> 00:02:35,660
+We refresh the, oh sorry, it's actually, so
+
+39
+00:02:35,660 --> 00:02:45,440
+it does a background query where it pulls
+
+40
+00:02:45,440 --> 00:02:53,680
+the data in from those surveys.
+
+41
+00:03:19,290 --> 00:03:23,250
+Okay, so it's having trouble finding something with
+
+42
+00:03:23,250 --> 00:03:47,760
+that one for some reason, and
+
+43
+00:03:47,760 --> 00:03:50,840
+then it builds a table up which is
+
+44
+00:03:50,840 --> 00:03:52,200
+24-hour surveys.
+
+45
+00:03:53,500 --> 00:03:59,020
+Again, sorry for the vagueness, but as I
+
+46
+00:03:59,020 --> 00:04:00,840
+say, we didn't build these things.
+
+47
+00:04:03,740 --> 00:04:08,320
+We have our usual requirements and compliance timeframes.
+
+48
+00:04:09,180 --> 00:04:10,520
+This is a bit confusing.
+
+49
+00:04:11,120 --> 00:04:15,660
+There is this file which we complete first,
+
+50
+00:04:16,180 --> 00:04:25,220
+and then there is another update tool which
+
+51
+00:04:25,220 --> 00:04:40,150
+is this one, survey management, which
+
+52
+00:04:40,150 --> 00:04:43,270
+also has requirements and compliance timeframes.
+
+53
+00:04:45,690 --> 00:04:52,200
+Again, so this actually looks as though it's
+
+54
+00:04:52,200 --> 00:04:55,340
+pulling the same data, so I'm not even
+
+55
+00:04:55,340 --> 00:04:58,560
+sure we need to complete the first one,
+
+56
+00:05:00,940 --> 00:05:06,200
+because I think this actually does the same
+
+57
+00:05:06,200 --> 00:05:07,160
+as the first one.
+
+58
+00:05:08,240 --> 00:05:09,380
+It builds a table.
+
+59
+00:05:09,880 --> 00:05:10,780
+We have our requirements.
+
+60
+00:05:11,000 --> 00:05:14,620
+We have our compliance timeframes as before, our
+
+61
+00:05:14,620 --> 00:05:19,860
+thresholds, and then we have, similar to incidence
+
+62
+00:05:19,860 --> 00:05:24,720
+management, a similar of statistical tables for friends
+
+63
+00:05:24,720 --> 00:05:29,380
+and family, for neurodevelopmental, for CTS, for VAS,
+
+64
+00:05:29,540 --> 00:05:33,880
+and for self-pay, and then NHS, all
+
+65
+00:05:33,880 --> 00:05:44,230
+NHS, I guess that is, all surveys, and
+
+66
+00:05:44,230 --> 00:05:47,570
+then we have CSAT scores for each one,
+
+67
+00:05:47,810 --> 00:05:52,590
+and again, it's a case of pulling a
+
+68
+00:05:52,590 --> 00:06:03,050
+date down, pulling the formulas down, and
+
+69
+00:06:03,050 --> 00:06:07,230
+then it builds up a compliance table here
+
+70
+00:06:08,990 --> 00:06:13,310
+based on the statistical data here.
+
+71
+00:06:18,420 --> 00:06:20,160
+Again, we can send you all of these
+
+72
+00:06:20,160 --> 00:06:26,240
+to analyse if you wish, and then again,
+
+73
+00:06:26,460 --> 00:06:40,630
+we copy that into the compliance data, into
+
+74
+00:06:40,630 --> 00:06:41,510
+the bottom here.
+
+75
+00:06:43,730 --> 00:06:49,490
+We update our last updated for feedback, which
+
+76
+00:06:49,490 --> 00:06:50,030
+is there.
+
+77
+00:06:50,270 --> 00:06:52,270
+We save it, refresh it twice.
+
+78
+00:06:52,410 --> 00:06:54,790
+It builds up all the tables, and then
+
+79
+00:06:54,790 --> 00:06:57,770
+hopefully, Bob's your uncle, you go to the
+
+80
+00:06:57,770 --> 00:06:59,890
+dashboard, refresh, and it pulls in the latest
+
+81
+00:06:59,890 --> 00:07:00,330
+data.
+
+82
+00:07:01,450 --> 00:07:02,130
+So, that is that.
+
+83
+00:07:02,850 --> 00:07:03,690
+I hope that's clear.
+
+84
+00:07:05,030 --> 00:07:05,790
+I'll carry on.
+
+85
+00:07:06,290 --> 00:07:06,510
+Cheers.
