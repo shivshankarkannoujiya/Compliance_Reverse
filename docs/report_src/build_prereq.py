@@ -25,7 +25,9 @@ def build(out):
     import importlib
     D = importlib.import_module({"staff": "prereq_staff", "incidents": "prereq_incidents", "complications": "prereq_complications", "training": "prereq_training", "feedback": "prereq_feedback", "rtt": "prereq_rtt", "incidents_full": "prereq_incidents_full"}[B.PROFILE])
     M = D.META
-    tables = (D.FILES, D.SHEETS, D.VBA, D.RULES, D.DECISIONS)
+    import prereq_datastore
+    X = prereq_datastore.extra(B.PROFILE)
+    tables = (D.FILES, D.SHEETS, D.VBA + X.get("VBA", []), D.RULES + X.get("RULES", []), D.DECISIONS + X.get("DECISIONS", []))
     blockers = M["blockers"]
 
     def blk(prefix):
@@ -39,6 +41,8 @@ def build(out):
          table([["<b>Applies to</b>", M["applies"]],
                 ["<b>Companion of</b>", M["spec"] + " (same folder). “Spec Figure N” and IDs such as P-xx, G-xx, FM-xx, FR-xx refer to that document"],
                 ["<b>Evidence</b>", M["evidence"]],
+                ["<b>Data store items</b>", "IDs ending in -DS come from the client’s source template (sources/Wellbeing Dashboard current data template.xlsx); "
+                                            "“DSL §n” and DS-xx refer to 00_Overview/Compliance_Data_Store_Logic.pdf"],
                 ["<b>Report date</b>", "16 October 2026"],
                 ["<b>Status</b>", "Open: awaiting client inputs. Build Phase 1 cannot start until every <b>Blocker</b> item in §6 is ticked"]],
                [40, 140], head=False, zebra=False),
