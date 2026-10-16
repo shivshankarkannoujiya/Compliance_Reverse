@@ -1,0 +1,270 @@
+[00:00:04-00:00:08] Hadi Raj, okay, only two to go now. This one is mandatory training.
+[00:00:10-00:00:12] compliance. Mishima screen.
+[00:00:18-00:00:21] So for this we use our...
+[00:00:22-00:00:25] what we call our training matrix.
+[00:00:26-00:00:28] which is this file
+[00:00:29-00:00:30] um
+[00:00:32-00:00:38] just give you a quick run through. So these orange tabs here are operational tabs.
+[00:00:39-00:00:41] These ones are...
+[00:00:44-00:00:47] compliance dashboard tabs.
+[00:00:48-00:00:51] So essentially what we do is this.
+[00:00:53-00:00:54] We have a list.
+[00:00:55-00:00:56] of everybody
+[00:00:56-00:00:58] who we, we.
+[00:00:58-00:01:00] We engage or have engaged.
+[00:01:02-00:01:03] We fill out.
+[00:01:04-00:01:05] um
+[00:01:10-00:01:11] we fill out
+[00:01:11-00:01:12] data.
+[00:01:13-00:01:15] There are some formulas in here.
+[00:01:15-00:01:24] that it will become apparent what they're for later. There's a formula there to say whether the staff is current or not. Sometimes we put staff on hold, sometimes obviously people leave.
+[00:01:24-00:01:29] So we need to know who's current and who's not so we can gauge our...
+[00:01:30-00:01:32] opposition.
+[00:01:33-00:01:34] as anyone time.
+[00:01:35-00:01:40] We have a last review date. We've got some compliance notes which we keep up to date.
+[00:01:41-00:01:46] So new stuff comes on board. So we've just...
+[00:01:47-00:01:49] We're just engaging.
+[00:01:51-00:01:52] Dr. Giorgios.
+[00:01:52-00:01:54] Mussolates.
+[00:01:54-00:01:55] list.
+[00:01:55-00:01:56] for
+[00:01:57-00:01:59] for the pronunciation.
+[00:02:00-00:02:00] Um.
+[00:02:02-00:02:02] We fill out.
+[00:02:03-00:02:04] details
+[00:02:05-00:02:06] First of all
+[00:02:06-00:02:09] And then we set him up on this big old spreadsheet here.
+[00:02:10-00:02:11] we
+[00:02:12-00:02:13] set up his
+[00:02:16-00:02:16] uh
+[00:02:18-00:02:21] And actually training, we put in all the details again.
+[00:02:23-00:02:24] got some
+[00:02:25-00:02:26] Omelette's here.
+[00:02:28-00:02:29] um
+[00:02:32-00:02:33] that help operate
+[00:02:34-00:02:35] this matrix.
+[00:02:38-00:02:42] We put in his completed training and
+[00:02:43-00:02:44] uh
+[00:02:45-00:02:45] We would then
+[00:02:46-00:02:47] Usually,
+[00:02:48-00:02:49] calculates
+[00:02:50-00:02:51] him to be on boarding.
+[00:02:52-00:02:53] which he is.
+[00:02:53-00:02:55] So he's not current staff. So he...
+[00:02:56-00:02:56] then
+[00:02:57-00:02:59] peers in our overview.
+[00:02:59-00:03:02] table for onboarding staff.
+[00:03:03-00:03:06] which is obviously not included in the...
+[00:03:06-00:03:08] in the compliance data.
+[00:03:09-00:03:11] As and when, staff alive.
+[00:03:13-00:03:15] they go into our main overview table.
+[00:03:17-00:03:17] uh
+[00:03:18-00:03:19] built.
+[00:03:21-00:03:22] using various excel formula.
+[00:03:24-00:03:26] and we've got some filters on it so...
+[00:03:27-00:03:28] Oh...
+[00:03:30-00:03:33] Our workers and contractors fall into four.
+[00:03:33-00:03:37] categories, there are either a substantive member of staff with well-being,
+[00:03:38-00:03:40] They are a contractor.
+[00:03:42-00:03:46] who doesn't have a substantive post provide.
+[00:03:47-00:03:48] there.
+[00:03:50-00:03:54] Someone engaged through Workforce Solutions, I believe they call them workers.
+[00:03:55-00:03:56] and
+[00:03:56-00:04:00] those people who contract on a freelance basis but
+[00:04:01-00:04:02] Also have a substantive.
+[00:04:03-00:04:05] grow with provides COC.
+[00:04:06-00:04:07] and the reason that
+[00:04:08-00:04:10] We differentiate people in this way.
+[00:04:11-00:04:13] is because
+[00:04:16-00:04:17] for
+[00:04:18-00:04:21] Well-being, staff, substantive staff,
+[00:04:21-00:04:24] the staff who are engaged who work for Solutions.
+[00:04:24-00:04:27] and staff that have a substantive post would provide CIC.
+[00:04:28-00:04:34] get monthly compliance reports on all those staff and contractors.
+[00:04:35-00:04:35] which
+[00:04:36-00:04:38] we could use to update.
+[00:04:39-00:04:40] the training.
+[00:04:41-00:04:41] um
+[00:04:43-00:04:46] sports contractors who are direct.
+[00:04:47-00:04:50] have to go direct to those contractors.
+[00:04:51-00:04:52] and
+[00:04:52-00:04:53] when things are...
+[00:04:54-00:04:55] Um
+[00:04:55-00:04:59] expiring or have expired, we communicate directly with them.
+[00:05:00-00:05:01] Um.
+[00:05:01-00:05:05] And then we, over the course of the month, we build up.
+[00:05:06-00:05:09] our table and our compliance picture.
+[00:05:11-00:05:11] uh...
+[00:05:12-00:05:16] The other thing that we do if we're taking on a new member of staff.
+[00:05:17-00:05:18] is we will
+[00:05:18-00:05:19] We will add
+[00:05:21-00:05:21] that.
+[00:05:22-00:05:25] member of staff to
+[00:05:26-00:05:27] B.
+[00:05:29-00:05:32] requirements tables so as you've seen
+[00:05:33-00:05:34] Um
+[00:05:36-00:05:37] Chaval.
+[00:05:38-00:05:40] of our compliance.
+[00:05:41-00:05:44] tools has a requirements table.
+[00:05:46-00:05:47] This one has a...
+[00:05:48-00:05:52] Obviously the name is the staff name or contractor name.
+[00:05:52-00:05:55] and the compliance type is the particular training.
+[00:05:55-00:05:58] and then it's whether it's required or not.
+[00:05:59-00:06:01] if it's a core or not, well they're all
+[00:06:02-00:06:03] pretty much cool.
+[00:06:04-00:06:05] Uh
+[00:06:05-00:06:07] Cost refers to notes.
+[00:06:08-00:06:08] Umm...
+[00:06:11-00:06:11] from
+[00:06:12-00:06:12] Aww.
+[00:06:14-00:06:15] Table
+[00:06:16-00:06:18] here. I think that's table one.
+[00:06:19-00:06:20] Yeah it is
+[00:06:21-00:06:22] Umm...
+[00:06:24-00:06:26] managed by us.
+[00:06:26-00:06:27] you need to look up
+[00:06:28-00:06:33] compliance on from the get I don't know what this is is it does it mean it should be done twice a month
+[00:06:34-00:06:35] Only Matt knows.
+[00:06:36-00:06:42] And if the member of staff is active or not, so active is always on the requirements and all it's doing there is cross referring.
+[00:06:43-00:06:47] and it's saying if I can see the person on this list
+[00:06:47-00:06:48] person's activity.
+[00:06:49-00:06:49] [BL
+[00:06:50-00:06:51] and the not
+[00:06:54-00:06:55] So if we were to set up
+[00:06:57-00:06:59] mass of liters
+[00:07:00-00:07:01] Um.
+[00:07:05-00:07:06] We would...
+[00:07:16-00:07:16] copy
+[00:07:17-00:07:18] some training,
+[00:07:21-00:07:22] down
+[00:07:23-00:07:25] We would.
+[00:07:25-00:07:26] copy
+[00:07:27-00:07:27] in
+[00:07:29-00:07:30] uh
+[00:07:31-00:07:31] his
+[00:07:32-00:07:33] 9
+[00:07:44-00:07:46] So, uh...
+[00:07:49-00:07:50] Let's just--
+[00:07:50-00:07:53] that for now and then we can.
+[00:07:55-00:07:59] So equality and diversity he doesn't need as a contractor.
+[00:08:00-00:08:04] Far safety, TARS-1, learning disabilities, awareness.
+[00:08:05-00:08:06] He doesn't currently
+[00:08:08-00:08:11] Moving on to the safe-calling adults here, safe-calling children.
+[00:08:12-00:08:16] Yes, basic life support. Yes, conflict resolution. No.
+[00:08:18-00:08:21] Health and safety, yes, Oliver McGowan, no.
+[00:08:25-00:08:25] Uh,
+[00:08:28-00:08:30] DSC? Yes.
+[00:08:32-00:08:33] Down core.
+[00:08:34-00:08:37] because anything that's required is considered to be core.
+[00:08:38-00:08:39] down who's managing.
+[00:08:41-00:08:42] These will fill in.
+[00:08:45-00:08:46] and his notes.
+[00:08:46-00:08:48] currently active as we know.
+[00:08:49-00:08:50] 'cause he's on
+[00:08:51-00:08:52] Um
+[00:08:54-00:08:55] I'll just skip over time phase for now.
+[00:08:56-00:08:59] We also need to set him up on our compliance transfer.
+[00:09:01-00:09:03] So again,
+[00:09:07-00:09:07] paying.
+[00:09:09-00:09:10] some of that.
+[00:09:13-00:09:14] uh
+[00:09:15-00:09:16] We need...
+[00:09:17-00:09:17] to
+[00:09:18-00:09:20] put in his name
+[00:09:29-00:09:30] Okay.
+[00:09:30-00:09:31] Uh,
+[00:09:33-00:09:34] That will then fill in.
+[00:09:37-00:09:45] Not sure why it says moving and handling not required. Oh, that's because he hasn't got the correct moving and handling as yet.
+[00:09:46-00:09:46] that's why
+[00:09:50-00:09:50] uh
+[00:09:51-00:09:52] issue that should be.
+[00:09:54-00:09:56] down so that's all right writing
+[00:09:58-00:10:00] I think which
+[00:10:00-00:10:04] clearly makes no difference on this. Again, apologies for the vagueness.
+[00:10:05-00:10:08] Manage buy, provide well-being.
+[00:10:10-00:10:11] Please have all been.
+[00:10:14-00:10:15] I call
+[00:10:17-00:10:18] training.
+[00:10:18-00:10:20] Again, we've got a couple of others.
+[00:10:21-00:10:24] compliance groups this feeds into
+[00:10:26-00:10:27] So that's him set up.
+[00:10:28-00:10:34] And then we've got our compliance time frames again, which is a common table in all of these tools.
+[00:10:35-00:10:35] um...
+[00:10:37-00:10:39] with every X months.
+[00:10:40-00:10:42] No point five months, call requirement.
+[00:10:42-00:10:44] people training.
+[00:10:44-00:10:47] and some of these mats allocate to other compliance groups as well.
+[00:10:49-00:10:50] um
+[00:10:51-00:10:54] missing is true. I don't know what that actually means.
+[00:10:55-00:10:56] We've got to look
+[00:10:56-00:10:59] And here's our threshold for our...
+[00:11:02-00:11:03] of these use
+[00:11:04-00:11:04] um
+[00:11:05-00:11:08] which is set. So for instance, information governance.
+[00:11:09-00:11:11] Well that should really be not point.
+[00:11:11-00:11:14] 9/5 but they can be changed.
+[00:11:15-00:11:15] Um
+[00:11:16-00:11:16] Anyway.
+[00:11:19-00:11:27] So once we've done that, once we've done, and there's some other here, we've got roles that specifies what.
+[00:11:28-00:11:28] training.
+[00:11:29-00:11:31] H-roll needs
+[00:11:33-00:11:37] training details so the details of the course is how often they should.
+[00:11:38-00:11:41] They should be what course script they're in.
+[00:11:41-00:11:43] again trying the intervals
+[00:11:46-00:11:48] These are drop downs for the overview.
+[00:11:49-00:11:49] uh...
+[00:11:50-00:11:51] Of course detail.
+[00:11:52-00:11:54] never been used, nurses never been used.
+[00:11:55-00:11:57] Staff fields that never been used and again
+[00:11:58-00:11:59] These are just...
+[00:12:00-00:12:01] transfers transfers
+[00:12:03-00:12:03] Again.
+[00:12:04-00:12:06] not sure if these are using the Desport or not.
+[00:12:07-00:12:07] Don't think so
+[00:12:08-00:12:11] again now i've remember asking that just before you left
+[00:12:12-00:12:16] how mandatory training works from the point of view of compliance data in the dashboard.
+[00:12:16-00:12:19] And he said, "I can't actually remember."
+[00:12:19-00:12:21] don't know, can't even remember where I was
+[00:12:22-00:12:23] so
+[00:12:23-00:12:27] I basically figured it out from scratch. So again, apologies.
+[00:12:28-00:12:29] if it's a bit vague so
+[00:12:31-00:12:35] So when our tables are all built and we're happy we've got the latest information in there.
+[00:12:36-00:12:38] We go to compliance, transfer.
+[00:12:39-00:12:40] copy this in
+[00:12:41-00:12:43] Now I've...
+[00:12:43-00:12:44] found that
+[00:12:45-00:12:46] whereas with
+[00:12:47-00:12:50] everything else you can just put it on the bottom there
+[00:12:52-00:12:54] and the training and there's a formula there.
+[00:12:55-00:12:56] in here to say
+[00:12:57-00:12:58] whether it's the last.
+[00:12:59-00:12:59] Um
+[00:13:01-00:13:02] the most recent
+[00:13:03-00:13:04] Record or not.
+[00:13:05-00:13:08] That doesn't seem to work for mandatory training.
+[00:13:09-00:13:09] so
+[00:13:10-00:13:12] So I go down the line.
+[00:13:12-00:13:16] of deleting the existing training data in this table.
+[00:13:17-00:13:20] and then copying in the latest one.
+[00:13:21-00:13:22] because we have a story
+[00:13:23-00:13:23] record.
+[00:13:25-00:13:26] Um,
+[00:13:27-00:13:30] in this file the training matrix if we needed
+[00:13:31-00:13:32] So
+[00:13:33-00:13:36] Look at it so we can see a historic.
+[00:13:37-00:13:38] build up here
+[00:13:40-00:13:43] so we can see that the Dao has been...
+[00:13:44-00:13:49] compliant in information governance from the 1st of April 22.
+[00:13:51-00:13:58] right up to 6 of the first 27. So it gives us, so if someone says, well, were they compliant in?
+[00:13:59-00:14:04] In August 23 we can say, yeah they were, instead of just having the last record.
+[00:14:05-00:14:09] So again, we copy and paste it in.
+[00:14:09-00:14:11] to the compliance data.
+[00:14:13-00:14:14] They are
+[00:14:14-00:14:16] last up the day.
+[00:14:17-00:14:18] We save.
+[00:14:18-00:14:20] refresh twice, it builds.
+[00:14:21-00:14:22] the table.
+[00:14:23-00:14:24] then informs the dashboard.
+[00:14:26-00:14:27] So that's it
+[00:14:27-00:14:29] Thanks D-Raj, just one more to go
+[00:14:30-00:14:31] Cheers.

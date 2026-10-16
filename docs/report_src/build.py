@@ -18,7 +18,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PROFILE = os.environ.get("REPORT_PROFILE", "staff")
 PROFILES = {"staff": ("figures", "content", "figs"),
             "incidents": ("figures_incidents", "content_incidents", "figs_incidents"),
-            "complications": ("figures_complications", "content_complications", "figs_complications")}
+            "complications": ("figures_complications", "content_complications", "figs_complications"),
+            "training": ("figures_training", "content_training", "figs_training")}
 _FIG_MOD, _CONTENT_MOD, FIG_DIR = PROFILES[PROFILE]
 FIGS = importlib.import_module(_FIG_MOD).FIGS
 C = importlib.import_module(_CONTENT_MOD)
@@ -98,7 +99,7 @@ for i, f in enumerate(FIGS, 1):
 
 def figref(fid):
     f = FIGS[FIGNUM[fid] - 1]
-    return "Figure %d [%s]" % (FIGNUM[fid], f[1])
+    return "Figure %d [%s]" % (FIGNUM[fid], f[1][:8])
 
 
 EMBEDDED = set()
@@ -119,7 +120,7 @@ def figure(fid, maxh=118 * mm):
         Hh = maxh; W = Hh * w / h
     img = RLImage(jpg, width=W, height=Hh); img.hAlign = "CENTER"
     tab = f[3]
-    cap = "<b>Figure %d [%s] — %s › %s:</b> %s" % (i, f[1], html.escape(f[2]), html.escape(tab), html.escape(f[4]))
+    cap = "<b>Figure %d [%s] — %s › %s:</b> %s" % (i, f[1][:8], html.escape(f[2]), html.escape(tab), html.escape(f[4]))
     box = Table([[img]], colWidths=[W + 2]); box.setStyle(TableStyle([("BOX", (0, 0), (-1, -1), 0.5, RULE), ("LEFTPADDING", (0, 0), (-1, -1), 1),
                                                                       ("RIGHTPADDING", (0, 0), (-1, -1), 1), ("TOPPADDING", (0, 0), (-1, -1), 1), ("BOTTOMPADDING", (0, 0), (-1, -1), 1)]))
     return KeepTogether([box, Paragraph(cap, ss["cap"])])

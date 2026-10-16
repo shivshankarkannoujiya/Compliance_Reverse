@@ -7,6 +7,7 @@ One generator builds the reports for every recording. `REPORT_PROFILE` picks the
 | `staff` (default) | `first/…131142…mp4` (Staff Management) | `01_Staff_Management/` |
 | `incidents` | `second/…135933…mp4` (Incident Management / Datix) | `02_Incident_Management/` |
 | `complications` | `third/…120551…mp4` (Complications) | `03_Complications/` |
+| `training` | `fourth/…113314…mp4` (Mandatory Training) | `04_Mandatory_Training/` |
 
 - `figures.py`, `figures_incidents.py`: figure manifests (id, video timestamp, workbook, tab, caption, crop, optional redaction).
 - `extract.py`: pulls each frame from the `.mp4` with ffmpeg at the exact timestamp, crops it and blurs redacted cells (needs `git lfs pull` first).
@@ -19,6 +20,7 @@ One generator builds the reports for every recording. `REPORT_PROFILE` picks the
 
 Datix screenshots have the Name and Description cells blurred, because they hold patient narratives and personal names.
 Complications screenshots have NHS numbers, patient names (Appt Ref, Patient ID), clinical notes and NHS-number lookup keys blurred.
+Training screenshots have staff email addresses blurred.
 
 Rebuild (from this folder):
 
