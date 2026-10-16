@@ -1,0 +1,37 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Hi Dheeraj, it's me again. So I'm going to make a video now to show how we update the compliance for incidents, which I think I might have included on the list of the last video as one of the ones that was a standard update. Did I do that by mistake? I didn't, that's good, excellent. 
+
+So I'll share my screen and I'll show you how this one is updated. I hope that's sharing. Let me just try again.
+
+Don't want to record a video and then find it's not sharing. That's more like it. Okay, so this is the, excuse me, this is the input tool that we use. 
+
+It doesn't work in the same way as the other ones that I did a video for last time. We don't need a names tag for this one because there's only one name and that's provide wellbeing. So we're looking at incidents for provide wellbeing. 
+
+So this is the requirements table which we can build manually. So we've got our different compliance types that are set up for incidents. They're all required to be reported. 
+
+They're all core requirements. There's no notes. There's a lookup there which gets pulled through into the requirements table in the compliance data, I think, which acts as some kind of lookup to build those tables. 
+
+And they'll all be active all the time and we can manually switch them off for any reason, or we can add other ones on, I guess. So that's our requirements table. So you remember for the last time we had a names, a requirements, and a compliance timeframes table. 
+
+So names we don't actually need because there's only one name and the name is provide wellbeing. This is the requirements table. This is the compliance table, compliance timeframes table, sorry. 
+
+So the compliance type, how often? Matt's said it for twice a month. We only look at this every month. They're all core requirements. 
+
+They fall into the compliance group operational. So that's one of the big three people, operational and clinical. The subgroup is incidents.
+
+There's a lookup there which pulls into the table. Missing again, I'm not 100% sure what that does. I think it just checks to see that there's a requirement for it. 
+
+And then we have our thresholds for our visual, which is a dial based on percentage. So if it's 100%, it's going to show green. If it's anything less than that, it's going to show red. 
+
+That's how it's been set up. Let me go through then the process of how we update it. So how we update it is this, is we download from Datex all of the incident data from Datex and load it into there.
+
+So in other words, and I'll need to, I'm assuming it will keep on sharing if I do this. No, I don't think it will. I'll pull this over to here. 
+
+Yeah, that should be sharing. So we just go into Datex and we go into the dashboard and then we pull out the export for Datex and then we just copy and paste it into here. Okay. 
+
+There's a column there that puts it into a grouping. So it looks at the category, which is over here and references that with a table and then it puts it into one of our categories. So what we generally do when we copy it in is we'll check that column. 
+
+Oh look, hashtag red. That's good, isn't it? That needs fixing. I'm just going to pause the recording there, Dheeraj, which I think I can do.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
