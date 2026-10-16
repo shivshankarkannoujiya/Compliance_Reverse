@@ -12,6 +12,7 @@ One generator builds the reports for every recording. `REPORT_PROFILE` picks the
 | `rtt` | `sixth/MEDDAD~1.MP4` (RTT compliance) | `06_RTT_Compliance/` |
 | `incidents_full` | `seventh/…102641…mp4` (Incidents, full process) | `07_Incident_Management_Full_Process/` |
 
+- `build_overview.py`: `00_Overview/Compliance_Dashboard_System_Overview.pdf`, how the seven areas relate (architecture diagram, shared pattern, links, common problems, build order).
 - `figures.py`, `figures_incidents.py`: figure manifests (id, video timestamp, workbook, tab, caption, crop, optional redaction).
 - `extract.py`: pulls each frame from the `.mp4` with ffmpeg at the exact timestamp, crops it and blurs redacted cells (needs `git lfs pull` first).
 - `content.py`, `content_incidents.py`: specification text and tables (sections 0–7, appendices).
