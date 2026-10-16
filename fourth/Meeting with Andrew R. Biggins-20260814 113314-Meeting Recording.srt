@@ -1,0 +1,907 @@
+1
+00:00:03,810 --> 00:00:04,850
+(Transcribed by TurboScribe. Go Unlimited to remove this message.) Hi Dheeraj.
+
+2
+00:00:04,970 --> 00:00:06,270
+Okay, only two to go now.
+
+3
+00:00:06,590 --> 00:00:11,230
+This one is mandatory training compliance.
+
+4
+00:00:12,030 --> 00:00:12,630
+Let me share my screen.
+
+5
+00:00:18,640 --> 00:00:23,040
+So for this, we use what we call
+
+6
+00:00:23,040 --> 00:00:28,360
+our training matrix, which is this file.
+
+7
+00:00:31,420 --> 00:00:33,760
+I'll just give you a quick run through.
+
+8
+00:00:33,760 --> 00:00:37,940
+So these orange tabs here are operational tabs.
+
+9
+00:00:39,300 --> 00:00:46,960
+These ones are compliance dashboard tabs.
+
+10
+00:00:48,240 --> 00:00:50,700
+So essentially what we do is this.
+
+11
+00:00:51,140 --> 00:00:57,440
+We have a list of everybody who we
+
+12
+00:00:57,440 --> 00:01:00,680
+engage or have engaged.
+
+13
+00:01:02,360 --> 00:01:12,320
+We fill out our data.
+
+14
+00:01:13,560 --> 00:01:16,240
+There are some formulas in here that it
+
+15
+00:01:16,240 --> 00:01:17,780
+will become apparent what they're for later.
+
+16
+00:01:18,020 --> 00:01:19,300
+There's a formula there to say whether the
+
+17
+00:01:19,300 --> 00:01:20,400
+staff is current or not.
+
+18
+00:01:21,040 --> 00:01:22,660
+Sometimes we put staff on hold.
+
+19
+00:01:22,800 --> 00:01:24,160
+Sometimes obviously people leave.
+
+20
+00:01:24,780 --> 00:01:26,240
+So we need to know who's current and
+
+21
+00:01:26,240 --> 00:01:31,420
+who's not so we can gauge our position
+
+22
+00:01:31,420 --> 00:01:34,100
+at any one time.
+
+23
+00:01:35,100 --> 00:01:36,960
+We have a last review date.
+
+24
+00:01:37,220 --> 00:01:40,060
+We've got some compliance notes, which we keep
+
+25
+00:01:40,060 --> 00:01:40,760
+up to date.
+
+26
+00:01:42,660 --> 00:01:44,680
+So a new staff comes on board.
+
+27
+00:01:44,980 --> 00:01:53,900
+So we're just engaging Dr. Georgios Moussalidis.
+
+28
+00:01:57,400 --> 00:01:58,800
+Apologies for the pronunciation.
+
+29
+00:02:00,940 --> 00:02:06,000
+We fill out his details, first of all,
+
+30
+00:02:06,240 --> 00:02:07,979
+and then we set him up on this
+
+31
+00:02:07,979 --> 00:02:09,180
+big old spreadsheet here.
+
+32
+00:02:11,380 --> 00:02:19,140
+We set up his mandatory training.
+
+33
+00:02:19,520 --> 00:02:20,760
+We put in all the details.
+
+34
+00:02:21,320 --> 00:02:26,580
+Again, we've got some formulas here.
+
+35
+00:02:29,440 --> 00:02:35,400
+That help operate this matrix.
+
+36
+00:02:38,360 --> 00:02:45,240
+We put in his completed training, and we
+
+37
+00:02:45,240 --> 00:02:52,140
+would then usually stipulate him to be onboarding,
+
+38
+00:02:52,240 --> 00:02:53,040
+which he is.
+
+39
+00:02:53,360 --> 00:02:54,980
+So he's not current staff.
+
+40
+00:02:54,980 --> 00:03:00,400
+So he then appears in our overview table
+
+41
+00:03:00,400 --> 00:03:04,920
+for onboarding staff, which is obviously not included
+
+42
+00:03:04,920 --> 00:03:07,960
+in the compliance data.
+
+43
+00:03:08,820 --> 00:03:13,560
+But as and when staff are live, they
+
+44
+00:03:13,560 --> 00:03:18,760
+go into our main overview table, which is
+
+45
+00:03:18,760 --> 00:03:22,540
+built using various Excel formula.
+
+46
+00:03:22,540 --> 00:03:25,560
+And we've got some filters on it.
+
+47
+00:03:26,060 --> 00:03:33,040
+So our workers and contractors fall into four
+
+48
+00:03:33,040 --> 00:03:34,080
+categories.
+
+49
+00:03:34,720 --> 00:03:36,860
+They're either a substantive member of staff with
+
+50
+00:03:36,860 --> 00:03:37,300
+well-being.
+
+51
+00:03:38,460 --> 00:03:44,020
+They are a contractor who doesn't have a
+
+52
+00:03:44,020 --> 00:03:46,140
+substantive post to provide.
+
+53
+00:03:49,180 --> 00:03:52,360
+They're someone engaged through workforce solutions.
+
+54
+00:03:52,360 --> 00:03:54,140
+I believe they call them workers.
+
+55
+00:03:55,580 --> 00:03:59,460
+And those people who contract on a freelance
+
+56
+00:03:59,460 --> 00:04:04,520
+basis but also have a substantive role with
+
+57
+00:04:04,520 --> 00:04:05,540
+provide COC.
+
+58
+00:04:06,120 --> 00:04:10,040
+And the reason that we differentiate people in
+
+59
+00:04:10,040 --> 00:04:19,649
+this way is because for well-being staff,
+
+60
+00:04:19,790 --> 00:04:22,930
+substantive staff, the staff who are engaged through
+
+61
+00:04:22,930 --> 00:04:26,190
+workforce solutions and staff that have a substantive
+
+62
+00:04:26,190 --> 00:04:30,690
+post with provide COC, we get monthly compliance
+
+63
+00:04:30,690 --> 00:04:35,630
+reports on all those staff and contractors, which
+
+64
+00:04:35,630 --> 00:04:40,130
+we could use to update the training.
+
+65
+00:04:42,990 --> 00:04:48,010
+For contractors who are direct, we have to
+
+66
+00:04:48,010 --> 00:04:49,830
+go direct to those contractors.
+
+67
+00:04:51,650 --> 00:04:57,250
+And when things are expiring or have expired,
+
+68
+00:04:57,350 --> 00:04:59,190
+we communicate directly with them.
+
+69
+00:05:00,750 --> 00:05:04,070
+And then we, over the course of the
+
+70
+00:05:04,070 --> 00:05:08,090
+month, we build up our table and our
+
+71
+00:05:08,090 --> 00:05:09,110
+compliance picture.
+
+72
+00:05:12,170 --> 00:05:14,450
+The other thing that we do if we're
+
+73
+00:05:14,450 --> 00:05:17,410
+taking on a new member of staff is
+
+74
+00:05:17,410 --> 00:05:24,310
+we will add that member of staff to
+
+75
+00:05:24,310 --> 00:05:30,610
+the requirements table.
+
+76
+00:05:30,610 --> 00:05:40,050
+So, as you've seen, each of our compliance
+
+77
+00:05:40,050 --> 00:05:44,150
+update tools has a requirements table.
+
+78
+00:05:45,950 --> 00:05:47,150
+This one has it.
+
+79
+00:05:48,370 --> 00:05:51,050
+Obviously, the name is the staff name or
+
+80
+00:05:51,050 --> 00:05:54,150
+contractor name, and the compliance type is the
+
+81
+00:05:54,150 --> 00:05:55,110
+particular training.
+
+82
+00:05:55,810 --> 00:05:58,350
+And then it's whether it's required or not.
+
+83
+00:05:58,350 --> 00:06:00,990
+If it's a core or not, well, they're
+
+84
+00:06:00,990 --> 00:06:03,230
+all pretty much core.
+
+85
+00:06:05,330 --> 00:06:15,240
+COS refers to notes from our table
+
+86
+00:06:15,240 --> 00:06:16,900
+here.
+
+87
+00:06:17,300 --> 00:06:18,600
+I think that's table one.
+
+88
+00:06:19,400 --> 00:06:25,920
+Yeah, it is managed by us.
+
+89
+00:06:26,700 --> 00:06:29,080
+You need to look up compliance.
+
+90
+00:06:29,080 --> 00:06:30,840
+I don't know what this is.
+
+91
+00:06:31,440 --> 00:06:32,840
+Does it mean it should be done twice
+
+92
+00:06:32,840 --> 00:06:33,300
+a month?
+
+93
+00:06:34,160 --> 00:06:34,960
+Only Matt knows.
+
+94
+00:06:36,460 --> 00:06:38,780
+And if the member of staff is active
+
+95
+00:06:38,780 --> 00:06:40,380
+or not, so active is always on the
+
+96
+00:06:40,380 --> 00:06:42,140
+requirements and all it's doing there, it's cross
+
+97
+00:06:42,140 --> 00:06:42,640
+referring.
+
+98
+00:06:43,540 --> 00:06:45,160
+And it's saying if I can see the
+
+99
+00:06:45,160 --> 00:06:48,520
+person on this list, that person's active.
+
+100
+00:06:48,860 --> 00:06:51,660
+If I can't, then they're not.
+
+101
+00:06:54,080 --> 00:06:57,800
+So, if we were to set up Dr.
+
+102
+00:06:58,040 --> 00:07:06,100
+Masolidis, we would
+
+103
+00:07:06,100 --> 00:07:18,190
+copy some
+
+104
+00:07:18,190 --> 00:07:22,210
+training down.
+
+105
+00:07:23,150 --> 00:07:33,030
+We would copy in his name.
+
+106
+00:07:45,290 --> 00:07:52,060
+So, let's just do that for now.
+
+107
+00:07:52,060 --> 00:07:55,480
+And then we can look.
+
+108
+00:07:55,720 --> 00:07:58,640
+So, equality and diversity, he doesn't need as
+
+109
+00:07:58,640 --> 00:07:59,420
+a contractor.
+
+110
+00:08:00,300 --> 00:08:01,120
+Fire safety, does.
+
+111
+00:08:02,220 --> 00:08:03,740
+Learning disabilities, awareness.
+
+112
+00:08:05,480 --> 00:08:06,740
+He doesn't currently.
+
+113
+00:08:08,160 --> 00:08:09,060
+Moving ahead, he does.
+
+114
+00:08:09,180 --> 00:08:10,100
+Safeguarding adults, yes.
+
+115
+00:08:10,220 --> 00:08:12,420
+Safeguarding children, yes.
+
+116
+00:08:12,760 --> 00:08:14,780
+Basic life support, yes.
+
+117
+00:08:15,040 --> 00:08:16,780
+Conflict resolution, no.
+
+118
+00:08:18,220 --> 00:08:19,940
+Health and safety, yes.
+
+119
+00:08:20,060 --> 00:08:21,660
+Oliver McGowan, no.
+
+120
+00:08:28,060 --> 00:08:29,700
+DSC, yes.
+
+121
+00:08:32,669 --> 00:08:35,590
+Drop down core, because anything that's required is
+
+122
+00:08:35,590 --> 00:08:36,850
+considered to be core.
+
+123
+00:08:37,789 --> 00:08:39,409
+Drop down, who's managing.
+
+124
+00:08:41,750 --> 00:08:42,850
+These all fill in.
+
+125
+00:08:44,950 --> 00:08:48,770
+And he's not currently active, as we know,
+
+126
+00:08:49,170 --> 00:08:49,890
+because he's onboarding.
+
+127
+00:08:53,390 --> 00:08:55,850
+I'll just skip over time phase for now.
+
+128
+00:08:56,330 --> 00:08:58,250
+We also need to set him up on
+
+129
+00:08:58,250 --> 00:08:59,570
+our compliance transfer.
+
+130
+00:09:00,990 --> 00:09:10,580
+So, again, copy in some of that.
+
+131
+00:09:14,730 --> 00:09:20,430
+We need to put in his name.
+
+132
+00:09:29,040 --> 00:09:29,640
+Okay.
+
+133
+00:09:32,680 --> 00:09:34,420
+That will then fill in.
+
+134
+00:09:36,940 --> 00:09:39,980
+Not sure why it says moving and handling
+
+135
+00:09:39,980 --> 00:09:41,700
+not required.
+
+136
+00:09:41,940 --> 00:09:43,580
+Oh, that's because he hasn't got the correct
+
+137
+00:09:43,580 --> 00:09:45,440
+moving and handling as yet.
+
+138
+00:09:46,320 --> 00:09:46,860
+That's why.
+
+139
+00:09:51,350 --> 00:09:55,110
+Issue that should be filled down.
+
+140
+00:09:55,250 --> 00:09:56,530
+So, that's our RAG rating.
+
+141
+00:09:56,530 --> 00:10:01,970
+I think, which clearly makes no difference on
+
+142
+00:10:01,970 --> 00:10:02,270
+this.
+
+143
+00:10:02,490 --> 00:10:04,610
+Again, apologies for the vagueness.
+
+144
+00:10:05,850 --> 00:10:08,030
+Managed by, provide well-being.
+
+145
+00:10:10,670 --> 00:10:14,950
+These have all been people.
+
+146
+00:10:17,090 --> 00:10:17,770
+Training.
+
+147
+00:10:18,430 --> 00:10:20,310
+Again, we've got a couple of others.
+
+148
+00:10:21,830 --> 00:10:22,750
+Compliance groups.
+
+149
+00:10:22,750 --> 00:10:23,770
+This feeds into.
+
+150
+00:10:26,030 --> 00:10:27,950
+So, that's him set up.
+
+151
+00:10:29,110 --> 00:10:31,530
+And then we've got our compliance timeframes again,
+
+152
+00:10:31,710 --> 00:10:33,250
+which is a common table in all of
+
+153
+00:10:33,250 --> 00:10:34,110
+these tools.
+
+154
+00:10:37,590 --> 00:10:41,690
+With every X months, 0.5 months core
+
+155
+00:10:41,690 --> 00:10:45,350
+requirement, people training, and some of these match
+
+156
+00:10:45,350 --> 00:10:47,690
+allocated to other compliance groups as well.
+
+157
+00:10:51,770 --> 00:10:53,150
+Missing is true.
+
+158
+00:10:53,370 --> 00:10:54,590
+I don't know what that actually means.
+
+159
+00:10:55,350 --> 00:10:56,270
+We've got to look at that.
+
+160
+00:10:57,090 --> 00:11:05,490
+And here's our thresholds for our visuals, which
+
+161
+00:11:05,490 --> 00:11:06,110
+are set.
+
+162
+00:11:06,330 --> 00:11:08,270
+So, for instance, information governance.
+
+163
+00:11:09,210 --> 00:11:12,710
+Well, that should really be 0.95, but
+
+164
+00:11:12,710 --> 00:11:14,190
+they can be changed.
+
+165
+00:11:15,950 --> 00:11:21,670
+Anyway, so once we've done that, once we've
+
+166
+00:11:21,670 --> 00:11:24,050
+done, and there's some other here.
+
+167
+00:11:24,210 --> 00:11:30,130
+We've got roles that specifies what training each
+
+168
+00:11:30,130 --> 00:11:31,130
+role needs.
+
+169
+00:11:32,950 --> 00:11:34,610
+We've got training details.
+
+170
+00:11:34,890 --> 00:11:36,690
+So, the details of the course is how
+
+171
+00:11:36,690 --> 00:11:40,530
+often they should be, what course group they're
+
+172
+00:11:40,530 --> 00:11:40,930
+in.
+
+173
+00:11:41,190 --> 00:11:43,010
+Again, training intervals.
+
+174
+00:11:43,010 --> 00:11:48,670
+These are dropdowns for the overview.
+
+175
+00:11:50,210 --> 00:11:53,070
+Course detail, never been used.
+
+176
+00:11:53,210 --> 00:11:54,390
+Nurses, never been used.
+
+177
+00:11:55,190 --> 00:11:56,950
+Staff filter, never been used.
+
+178
+00:11:57,090 --> 00:12:01,690
+And again, these are just transfers.
+
+179
+00:12:03,170 --> 00:12:05,790
+Again, not sure if these are used in
+
+180
+00:12:05,790 --> 00:12:06,730
+the dashboard or not.
+
+181
+00:12:07,050 --> 00:12:07,790
+Don't think so.
+
+182
+00:12:08,870 --> 00:12:11,270
+Again, I remember asking that just before he
+
+183
+00:12:11,270 --> 00:12:14,590
+left, how mandatory training works from the point
+
+184
+00:12:14,590 --> 00:12:16,250
+of view of compliance data in the dashboard.
+
+185
+00:12:17,010 --> 00:12:18,970
+And he said, I can't actually remember.
+
+186
+00:12:19,410 --> 00:12:19,970
+Don't know.
+
+187
+00:12:20,190 --> 00:12:21,350
+Can't even remember what I was up to.
+
+188
+00:12:22,330 --> 00:12:26,050
+So, I basically figured it out from scratch.
+
+189
+00:12:26,510 --> 00:12:29,070
+So, again, apologies if it's a bit vague.
+
+190
+00:12:29,390 --> 00:12:32,890
+So, when our tables are all built and
+
+191
+00:12:32,890 --> 00:12:34,770
+we're happy, we've got the latest information in
+
+192
+00:12:34,770 --> 00:12:35,090
+there.
+
+193
+00:12:35,690 --> 00:12:37,730
+We go to compliance transfer.
+
+194
+00:12:38,550 --> 00:12:40,590
+We copy this in.
+
+195
+00:12:41,610 --> 00:12:48,550
+Now, I've found that whereas with everything else,
+
+196
+00:12:48,650 --> 00:12:49,970
+you can just put it on the bottom
+
+197
+00:12:49,970 --> 00:12:50,370
+there.
+
+198
+00:12:51,790 --> 00:12:54,790
+And the training, and there's a formula there
+
+199
+00:12:54,790 --> 00:12:58,670
+in here to say whether it's the last,
+
+200
+00:12:59,430 --> 00:13:06,390
+the most recent record or not, that doesn't
+
+201
+00:13:06,390 --> 00:13:08,190
+seem to work for mandatory training.
+
+202
+00:13:09,430 --> 00:13:13,370
+So, I go down the line of deleting
+
+203
+00:13:13,370 --> 00:13:17,570
+the existing training data in this table and
+
+204
+00:13:17,570 --> 00:13:21,530
+then copying in the latest one because we
+
+205
+00:13:21,530 --> 00:13:27,910
+have a historic record in this file, the
+
+206
+00:13:27,910 --> 00:13:34,090
+training matrix, if we needed to look at
+
+207
+00:13:34,090 --> 00:13:37,850
+it so we can see a historic build
+
+208
+00:13:37,850 --> 00:13:38,470
+up here.
+
+209
+00:13:39,810 --> 00:13:43,170
+So, we can see that Adele has been
+
+210
+00:13:43,170 --> 00:13:48,830
+compliant in information governance from the 1st of
+
+211
+00:13:48,830 --> 00:13:53,250
+April 22 right up till 6th of the
+
+212
+00:13:53,250 --> 00:13:53,910
+1st, 27th.
+
+213
+00:13:53,910 --> 00:13:56,170
+So, it gives us...
+
+214
+00:13:56,550 --> 00:13:58,190
+So, if someone says, well, were they compliant
+
+215
+00:13:58,190 --> 00:14:00,570
+in August 23?
+
+216
+00:14:00,770 --> 00:14:03,010
+We can say, yeah, they were, instead of
+
+217
+00:14:03,010 --> 00:14:04,010
+just having the last record.
+
+218
+00:14:05,530 --> 00:14:09,030
+So, again, we copy and paste it in
+
+219
+00:14:09,030 --> 00:14:11,350
+to the compliance data.
+
+220
+00:14:12,450 --> 00:14:16,130
+We update our last updated date.
+
+221
+00:14:16,690 --> 00:14:19,830
+We save, refresh twice.
+
+222
+00:14:19,830 --> 00:14:24,230
+It builds the table, which then informs the
+
+223
+00:14:24,230 --> 00:14:24,550
+dashboard.
+
+224
+00:14:26,150 --> 00:14:27,230
+So, that's it.
+
+225
+00:14:27,930 --> 00:14:28,710
+Thanks, Dheeraj.
+
+226
+00:14:28,830 --> 00:14:29,810
+Just one more to go.
+
+227
+00:14:30,530 --> 00:14:30,790
+Cheers.

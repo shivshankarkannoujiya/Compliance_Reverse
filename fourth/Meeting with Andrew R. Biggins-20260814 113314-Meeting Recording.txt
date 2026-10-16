@@ -1,0 +1,95 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Hi Dheeraj. Okay, only two to go now. This one is mandatory training compliance.
+
+Let me share my screen. So for this, we use what we call our training matrix, which is this file. I'll just give you a quick run through.
+
+So these orange tabs here are operational tabs. These ones are compliance dashboard tabs. So essentially what we do is this.
+
+We have a list of everybody who we engage or have engaged. We fill out our data. There are some formulas in here that it will become apparent what they're for later.
+
+There's a formula there to say whether the staff is current or not. Sometimes we put staff on hold. Sometimes obviously people leave.
+
+So we need to know who's current and who's not so we can gauge our position at any one time. We have a last review date. We've got some compliance notes, which we keep up to date.
+
+So a new staff comes on board. So we're just engaging Dr. Georgios Moussalidis. Apologies for the pronunciation.
+
+We fill out his details, first of all, and then we set him up on this big old spreadsheet here. We set up his mandatory training. We put in all the details.
+
+Again, we've got some formulas here. That help operate this matrix. We put in his completed training, and we would then usually stipulate him to be onboarding, which he is.
+
+So he's not current staff. So he then appears in our overview table for onboarding staff, which is obviously not included in the compliance data. But as and when staff are live, they go into our main overview table, which is built using various Excel formula.
+
+And we've got some filters on it. So our workers and contractors fall into four categories. They're either a substantive member of staff with well-being.
+
+They are a contractor who doesn't have a substantive post to provide. They're someone engaged through workforce solutions. I believe they call them workers.
+
+And those people who contract on a freelance basis but also have a substantive role with provide COC. And the reason that we differentiate people in this way is because for well-being staff, substantive staff, the staff who are engaged through workforce solutions and staff that have a substantive post with provide COC, we get monthly compliance reports on all those staff and contractors, which we could use to update the training. For contractors who are direct, we have to go direct to those contractors.
+
+And when things are expiring or have expired, we communicate directly with them. And then we, over the course of the month, we build up our table and our compliance picture. The other thing that we do if we're taking on a new member of staff is we will add that member of staff to the requirements table.
+
+So, as you've seen, each of our compliance update tools has a requirements table. This one has it. Obviously, the name is the staff name or contractor name, and the compliance type is the particular training.
+
+And then it's whether it's required or not. If it's a core or not, well, they're all pretty much core. COS refers to notes from our table here.
+
+I think that's table one. Yeah, it is managed by us. You need to look up compliance.
+
+I don't know what this is. Does it mean it should be done twice a month? Only Matt knows. And if the member of staff is active or not, so active is always on the requirements and all it's doing there, it's cross referring.
+
+And it's saying if I can see the person on this list, that person's active. If I can't, then they're not. So, if we were to set up Dr. Masolidis, we would copy some training down.
+
+We would copy in his name. So, let's just do that for now. And then we can look.
+
+So, equality and diversity, he doesn't need as a contractor. Fire safety, does. Learning disabilities, awareness.
+
+He doesn't currently. Moving ahead, he does. Safeguarding adults, yes.
+
+Safeguarding children, yes. Basic life support, yes. Conflict resolution, no.
+
+Health and safety, yes. Oliver McGowan, no. DSC, yes.
+
+Drop down core, because anything that's required is considered to be core. Drop down, who's managing. These all fill in.
+
+And he's not currently active, as we know, because he's onboarding. I'll just skip over time phase for now. We also need to set him up on our compliance transfer.
+
+So, again, copy in some of that. We need to put in his name. Okay.
+
+That will then fill in. Not sure why it says moving and handling not required. Oh, that's because he hasn't got the correct moving and handling as yet.
+
+That's why. Issue that should be filled down. So, that's our RAG rating.
+
+I think, which clearly makes no difference on this. Again, apologies for the vagueness. Managed by, provide well-being.
+
+These have all been people. Training. Again, we've got a couple of others.
+
+Compliance groups. This feeds into. So, that's him set up.
+
+And then we've got our compliance timeframes again, which is a common table in all of these tools. With every X months, 0.5 months core requirement, people training, and some of these match allocated to other compliance groups as well. Missing is true.
+
+I don't know what that actually means. We've got to look at that. And here's our thresholds for our visuals, which are set.
+
+So, for instance, information governance. Well, that should really be 0.95, but they can be changed. Anyway, so once we've done that, once we've done, and there's some other here.
+
+We've got roles that specifies what training each role needs. We've got training details. So, the details of the course is how often they should be, what course group they're in.
+
+Again, training intervals. These are dropdowns for the overview. Course detail, never been used.
+
+Nurses, never been used. Staff filter, never been used. And again, these are just transfers.
+
+Again, not sure if these are used in the dashboard or not. Don't think so. Again, I remember asking that just before he left, how mandatory training works from the point of view of compliance data in the dashboard.
+
+And he said, I can't actually remember. Don't know. Can't even remember what I was up to.
+
+So, I basically figured it out from scratch. So, again, apologies if it's a bit vague. So, when our tables are all built and we're happy, we've got the latest information in there.
+
+We go to compliance transfer. We copy this in. Now, I've found that whereas with everything else, you can just put it on the bottom there.
+
+And the training, and there's a formula there in here to say whether it's the last, the most recent record or not, that doesn't seem to work for mandatory training. So, I go down the line of deleting the existing training data in this table and then copying in the latest one because we have a historic record in this file, the training matrix, if we needed to look at it so we can see a historic build up here. So, we can see that Adele has been compliant in information governance from the 1st of April 22 right up till 6th of the 1st, 27th.
+
+So, it gives us... So, if someone says, well, were they compliant in August 23? We can say, yeah, they were, instead of just having the last record. So, again, we copy and paste it in to the compliance data. We update our last updated date.
+
+We save, refresh twice. It builds the table, which then informs the dashboard. So, that's it.
+
+Thanks, Dheeraj. Just one more to go. Cheers.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
