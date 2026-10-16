@@ -11,10 +11,16 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (BaseDocTemplate, PageTemplate, Frame, Paragraph, Spacer, Table, TableStyle,
                                 Image as RLImage, PageBreak, KeepTogether, CondPageBreak)
 from reportlab.platypus.tableofcontents import TableOfContents
-from figures import FIGS
-import content as C
+import importlib
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+# One generator, several recordings: REPORT_PROFILE picks the figure manifest, content module and figure folder.
+PROFILE = os.environ.get("REPORT_PROFILE", "staff")
+PROFILES = {"staff": ("figures", "content", "figs"),
+            "incidents": ("figures_incidents", "content_incidents", "figs_incidents")}
+_FIG_MOD, _CONTENT_MOD, FIG_DIR = PROFILES[PROFILE]
+FIGS = importlib.import_module(_FIG_MOD).FIGS
+C = importlib.import_module(_CONTENT_MOD)
 F = "/usr/share/fonts/truetype/dejavu/"
 pdfmetrics.registerFont(TTFont("DV", F + "DejaVuSans.ttf"))
 pdfmetrics.registerFont(TTFont("DVB", F + "DejaVuSans-Bold.ttf"))
@@ -45,9 +51,11 @@ ss["callout"] = ParagraphStyle("callout", parent=ss["body"], backColor=WARN, bor
 
 
 class Doc(BaseDocTemplate):
-    HEADER = "Staff Management Compliance Workflow — Technical Specification (Reverse-Engineered)"
+    HEADER = getattr(C, "HEADER", "Staff Management Compliance Workflow — Technical Specification (Reverse-Engineered)")
+    SOURCE = getattr(C, "SOURCE", "Source: Teams recording 20260811_131142 (30:54)")
 
-    def __init__(self, fn, title="Staff Management Compliance Workflow – Reverse-Engineering Specification", header=None, **kw):
+    def __init__(self, fn, title=getattr(C, "DOC_TITLE", "Staff Management Compliance Workflow – Reverse-Engineering Specification"),
+                 header=None, **kw):
         super().__init__(fn, pagesize=A4, leftMargin=15 * mm, rightMargin=15 * mm, topMargin=17 * mm, bottomMargin=16 * mm,
                          title=title, author="Reverse-engineering specification (generated)", **kw)
         if header:
@@ -60,7 +68,7 @@ class Doc(BaseDocTemplate):
             return
         c.saveState(); c.setFont("DV", 7); c.setFillColor(MUTED)
         c.drawString(15 * mm, A4[1] - 10 * mm, self.HEADER)
-        c.drawRightString(A4[0] - 15 * mm, A4[1] - 10 * mm, "Source: Teams recording 20260811_131142 (30:54)")
+        c.drawRightString(A4[0] - 15 * mm, A4[1] - 10 * mm, self.SOURCE)
         c.setStrokeColor(RULE); c.line(15 * mm, A4[1] - 11.5 * mm, A4[0] - 15 * mm, A4[1] - 11.5 * mm)
         c.drawRightString(A4[0] - 15 * mm, 9 * mm, "Page %d" % d.page)
         c.restoreState()
@@ -100,8 +108,8 @@ def figure(fid, maxh=118 * mm):
     if fid in EMBEDDED:
         return Paragraph("<i>Shown above: %s — %s</i>" % (figref(fid), html.escape(f[4][:110]) + ("…" if len(f[4]) > 110 else "")), ss["cap"])
     EMBEDDED.add(fid)
-    path = os.path.join(HERE, "figs", fid + ".png")
-    jpg = os.path.join(HERE, "figs", fid + "_e.jpg")
+    path = os.path.join(HERE, FIG_DIR, fid + ".png")
+    jpg = os.path.join(HERE, FIG_DIR, fid + "_e.jpg")
     if not os.path.exists(jpg):
         Image.open(path).convert("RGB").save(jpg, quality=90, optimize=True)
     w, h = Image.open(path).size
@@ -154,9 +162,9 @@ def build(out):
     story = []
     # Title block
     story += [Spacer(1, 22 * mm), para("TECHNICAL SPECIFICATION · REVERSE-ENGINEERING REPORT", "small"), Spacer(1, 3 * mm),
-              Paragraph("Staff Management Compliance Datastore Update", ss["title"]),
-              Paragraph("Legacy Excel / VBA / Power Query workflow, reverse-engineered from an operator screen recording, "
-                        "with a target-state architecture for its replacement", ss["sub"])]
+              Paragraph(getattr(C, "TITLE", "Staff Management Compliance Datastore Update"), ss["title"]),
+              Paragraph(getattr(C, "SUBTITLE", "Legacy Excel / VBA / Power Query workflow, reverse-engineered from an operator screen recording, "
+                                               "with a target-state architecture for its replacement"), ss["sub"])]
     story.append(table(C.TITLE_BLOCK, [45, 135], head=False, zebra=False))
     story += [Spacer(1, 8 * mm), para(C.EXEC_SUMMARY_INTRO)] + bullets(C.EXEC_SUMMARY)
     story.append(PageBreak())
@@ -164,15 +172,8 @@ def build(out):
     toc.levelStyles = [ParagraphStyle("t0", fontName="DVB", fontSize=9.5, leading=14, leftIndent=0, textColor=INK),
                        ParagraphStyle("t1", fontName="DV", fontSize=8.4, leading=11.5, leftIndent=12, textColor=INK)]
     story += [Paragraph("Table of Contents", ss["h1"]), toc, PageBreak()]
-    story += C.section0(ctx)
-    story += C.section1(ctx)
-    story += C.section2(ctx)
-    story += C.section3(ctx)
-    story += C.section4(ctx)
-    story += C.section5(ctx)
-    story += C.section6(ctx)
-    story += C.section7(ctx)
-    story += C.appendix(ctx)
+    for name in ("section0", "section1", "section2", "section3", "section4", "section5", "section6", "section7", "appendix"):
+        story += getattr(C, name)(ctx)
     doc.multiBuild(story)
     EMBEDDED.clear()
 
