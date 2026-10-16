@@ -9,7 +9,8 @@ FIG_MOD,FIG_DIR,V={"staff":("figures","figs","/home/user/Compliance_Reverse/firs
                    "complications":("figures_complications","figs_complications","/home/user/Compliance_Reverse/third/Meeting with Andrew R. Biggins-20260814_120551-Meeting Recording.mp4"),
                    "training":("figures_training","figs_training","/home/user/Compliance_Reverse/fourth/Meeting with Andrew R. Biggins-20260814_113314-Meeting Recording.mp4"),
                    "feedback":("figures_feedback","figs_feedback","/home/user/Compliance_Reverse/fifth/Meeting with Andrew R. Biggins-20260814_111322-Meeting Recording.mp4"),
-                   "rtt":("figures_rtt","figs_rtt","/home/user/Compliance_Reverse/sixth/MEDDAD~1.MP4")}[PROFILE]
+                   "rtt":("figures_rtt","figs_rtt","/home/user/Compliance_Reverse/sixth/MEDDAD~1.MP4"),
+                   "incidents_full":("figures_incidents_full","figs_incidents_full","/home/user/Compliance_Reverse/seventh/Meeting with Andrew R. Biggins-20260814_102641-Meeting Recording.mp4")}[PROFILE]
 FIGS=importlib.import_module(FIG_MOD).FIGS
 os.makedirs(FIG_DIR,exist_ok=True)
 CROPS={"xl":(0,95,1675,990),"top":(0,290,1675,700),"full":(0,0,1920,1080),"popup":(350,380,1350,1080),
@@ -33,7 +34,11 @@ REDACT={"redact_wide":[(77,345,163,835),(1051,345,1167,835)],
         "all":[(240,200,1660,250),(330,330,965,895)],
         # RTT: NHS numbers in the RTT list and the Power Query preview.
         "rtt":[(25,288,142,895)],
-        "pq":[(360,212,545,895)]}
+        "pq":[(360,212,545,895)],
+        # Incidents (full): Datix descriptions and Teams notification pop-ups naming staff.
+        "dx":[(1050,330,1168,895),(1270,620,1665,760)],
+        "webrep":[(1180,430,1505,1080),(1150,780,1920,1080)],
+        "toast_full":[(1250,800,1920,1080)]}
 def redact(im,boxes):
     for b in boxes:
         im.paste(im.crop(b).filter(ImageFilter.GaussianBlur(9)),b[:2])
