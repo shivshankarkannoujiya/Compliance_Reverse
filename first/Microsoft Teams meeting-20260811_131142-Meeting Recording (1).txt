@@ -1,0 +1,161 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Hi there Dheeraj, hope you're well. Just as a point of order, I just recorded a video, spent half an hour doing it and didn't, yeah, didn't share my screen. So that's a waste of time on it. 
+
+But still, let's see if we can have some more success with this one. So I'm going to turn my camera off. I'm going to share my screen.
+
+Share the right screen, I think might be good. Right, let's unshare that a minute. Make sure we share the correct screen, that one.
+
+Okay, perfect. So I'm going to run you through how we update the data store for the majority of the compliance dashboard. What we call the compliance dashboard.
+
+This particular area of the compliance data is called staff management. And I'll take you through how this is set up, first of all. And hopefully, it will become clear how the tool works. 
+
+So we call this a user input tool. This is just an Excel spreadsheet that is really designed to inform the compliance data. I just want to get rid of something I did on my abortive attempt. 
+
+There we go. Okay. Yeah, that links to this, it reads and writes from the data store.
+
+So it's kind of a semi-automated update process. I think I've sent you the data store. So you've seen all the tables that are built out of this, out of the various tools.
+
+So let me go through the tool, first of all. So the kind of setup that is required before we can start writing to the data store would be, first of all, to fill in this tab that says names. Now, this acts as data for the data store, and also just a convenient method of storing data for these people. 
+
+So this is staff management. So all the names of staff, if it was the estates update tool, the names would be sites. If it was medical devices, all these would be medical devices. 
+
+There are very few of these columns, which are actually essential to the data store. The first is the name. Those are known to be taken out. 
+
+I'm not sure if managed by is essential. I don't think it is, but it might be. All these are information up until we get to this column here, which is active. 
+
+So we can set this as true or false. And if it's true, it will be featured in the visuals on the dashboard, because one of the filters is that active is true to show the data in there. So we can switch people on and off as we need to.
+
+I'm not sure if these are essential, but what they do is, is they tell us how many compliance areas have been set up for a particular person, and how many compliance areas there are in total. And there would be reasons why we didn't set up some of these, which you'll see in a minute. This column here is something we were working on, I think, to try and add some more functionality to it, but it wasn't actually needed in the end. 
+
+So you can ignore that. So let's say we have a new contractor or member of staff, we want to add, we'll call the person testy tester. This person will be a freelance contractor, so they're not actually managed by anybody.
+
+They'll be a contractor. And they are what we call a gipsy, which is a GP with special interest. So they'll be a clinician, we're gonna, we're gonna make this person a vasectomy, a vasectomist, someone who carries out vasectomies, either on a self pay or NHS basis. 
+
+They could equally carry out carpal tunnel, minor skin, or they could be a nurse, or whatever they are is going to govern what different areas of staff management compliance are set up for them, which you'll see in a minute. I don't particularly want to fill in all this. I do want to tell the data store if they're active or not. 
+
+So they are active. I'm going to say they're active. Again, we don't have to put this in, but I'm going to put in anyway, from the first of August. 
+
+We haven't set any compliance areas up yet. And there are 22 compliance areas we could conceivably set up for that person. So, what we would also want to do is set up something called compliance timeframes.
+
+Now compliance timeframes list all the different compliance types that fall in to staff management. Though, and they all fall into the main compliance group, which is people. So we've got people operations and clinical.
+
+And all of the compliance areas will fall into one of those. The subgroup is listed. This is listed as accreditation prep. 
+
+Well, I think that was a change that was proposed. They're generally non-core things. Core and non-core requirements are listed. 
+
+I don't necessarily agree with these because I think accreditation should be core, performance review should be core. Matt very much decided these on his own. So, I think they should actually all be staff requirements.
+
+And then we were going to use this for onboarding as well. We no longer do routinely. So, I'm not sure we actually need the onboarding things, but Richard might decide actually we should be using it as a business for onboarding and there should be an area of compliance that shows onboarding, but that was never developed properly.
+
+And then there's compliance group three and four. So, what Matt was trying to do was trying to intermesh all these different things. So, for example, he's arguing that if someone doesn't have special indemnity insurance, it affects our fitness to practise score and our clinical score.
+
+I think the current feeling is that these areas should have a main compliance group and a subgroup but not other groups because it doesn't seem to make any sense in most cases to do that. But again, that's probably something Richard needs to make a call on. I don't know what these look ups are for.
+
+I imagine they may be pulled through into some of the tables. Missing, again, that doesn't explain what that actually means. Comcat, XLOOKUP, Comcat, add requirements, name, compliance type.
+
+I think it's saying is it in the requirements or not? And these thresholds are for the visuals in the dashboard and depending on what percentage compliance is at, it controls the conditional formatting, the colour of the gauge visual. So, if it's above 0.9, it's going to be green. If it's below 0.6, it's going to be red and then shades in between.
+
+Again, that was something Matt did. He decided on what those thresholds were going to be. Now, this table, each one of these tools has a table and then when the data is refreshed for the first time, these compliance timeframe tables are built through power queries by referencing the tool.
+
+So, for example, we've got, we should have a staff management compliance table. There we go. So, there is the compliance table and it's pulled all these in to use in building the final table.
+
+So, we've set that up. Roles, I'm not sure this is actually used at all. So, I'm not sure why that is there. 
+
+I don't think it's essential. To be honest, that it might be. So, we've got our compliance timeframe set up. 
+
+We now need our requirements. So, our requirements are going to be individual for each of our names. So, in this case, for each contractor or staff member, if it was a state, it would be each individual estate site, if it was medical devices, each individual device, etc.
+
+So, we're first going to set up the requirements. Now, by adding testy tester to the names tab, it should now come up in our dropdowns. So, there is testy tester.
+
+And just so I can check if we've actually set up anything for testy tester, you can see we haven't. So, this stuff is all referencing other tables. This allows us to change a requirement that's already been set up using Visual Basic.
+
+These columns were originally hidden, I think. They help update the table, I believe, or maybe even the Visual Basic. We can obviously let you see the Visual Basic, send you copies of these tools so you can see what the VP is doing.
+
+So, if I click list missing, Visual Basic will show me for testy tester, which of these groups I haven't set up, which should be all of them. And they are. So, there'll be all 22 possible criteria I can set up or compliance type I can set up for testy tester.
+
+So, why is it not? So, now I'm going to set up all these individual requirements. So, this is a vasectomy clinician. This, again, is, again, I'm not sure that actually means anything. 
+
+I don't think it actually uses this. I never use it. I just use the name. 
+
+So, personal indemnity insurance will certainly need. I think that's a core requirement. They should have a professional registration. 
+
+If they're a doctor, because these people will be GPs. I think that's core. VAS accreditation, well, they need to be accredited every two years by Provider Wellbeing. 
+
+That is a core policy. CTS, they're not doing carpal tunnel. They're not doing minor skin. 
+
+They're not doing ND. Performance review, they will need. So, they'll have a performance review with someone from the operations team to assess their performance.
+
+I think that's core. Standard DBS, they're not going to need because they're going to have an enhanced DBS. And that is a core requirement, I think, because we can't let people loose on the public who we haven't seen a DBS for. 
+
+VAS mentor review or CPD, this will be discussed during reaccreditation and contract means a performance review. So, it's going to be needed, but it's not core. Not going to need the same for CTS. 
+
+Not going to need the same for minor skin. Come on. What's going on with this? Slow reactions. 
+
+VAS peer reviews are recommended, but not core. CTS peer review, sorry, not core. Not going to be required.
+
+Reflective review is required, but it's not core. Minor skin peer review, not going to be required. CTS practical mentor session, not required. 
+
+Minor skin practical mentor session, not required. VAS practical is required, but it's a non-core ask. Medical appraisal is going to be required.
+
+I would suggest that's core, as is medical revalidation. I suggest that's core. And if they're a business, we will need to pass them through NIR 35. 
+
+So, I'm going to suggest that Testy Tester does trade under a company name rather than just a freelance sole proprietor or whatever. And I would suggest that that's core. So, now I'm going to write this into the requirements data, which is done by Visual Basic.
+
+So, that is now going to write those in. Okay. So, they're now written into this table here. 
+
+So, there's Testy Tester. And there's all the things that we've written in. So, name, compliance type, if it's required or not, if it's core. 
+
+Again, I don't think we're going to use this for onboarding. Managed by, not sure. Though it will probably actually be provide wellbeing for everybody.
+
+So, actually, let's add provide wellbeing in there. Yeah, and that's now added into there. So, that's just looking that up. 
+
+Unique lookup, I believe, is needed for the table, it's going to bill for compliance, compliance time frame. So, that's how often these things should be checked and and whether the person is active or not. So, now I'm going to save that, because when I refresh my data, eventually, after I've done my full update of this for the month, I'm going to want my compliance data to build its tables from the data that's in here.
+
+And it can't if I've not saved it. So, now I can go in and fill any information that I have on Testy Tester. So, I can now build a compliance record.
+
+So, PI insurance, I'm going to say, I've seen it starts from the 1st of June and goes through to 31st of May next year. Should write in the notes, if I put a certificate on file, and then I can do these all in in one go if I want. It doesn't like it the visual basic if you miss a row.
+
+But I'll do Testy Tester, professional registration, I'll say I downloaded that from the GMC today. I need to check that again in a year. And the download I put on file.
+
+VAS accreditation, well, that's going to need to be done in two years, we assume that all the VAS bonafides were looked at before the condition was passed as fit to practise. So, we'll take that from the date they've started practise. Performance review, the same, we want that to flag after they've been with us a year.
+
+So, again, started to practise on the 1st of August. So, that will come forward in a year. Enhanced DBS. 
+
+So, we did that as part of the onboarding process, we saw that on the 15th of July. VAS mentor or CPD is not going to be done, peer review won't be, surgical reflective review won't be, VAS practical mentor session won't be, medical appraisal, well, assume one of those should have been provided at onboarding because they should have one every year. And we'll say that happened on the 1st of June. 
+
+So, we need to chase for another one in a year. And then medic revalidation should happen every five years for a doctor. So, we'll say we saw that on the 1st of March last year. 
+
+So, we need to mark that as reviewable in five years from that date. And lastly, an IO35 for this person should have been completed before they start practising. So, again, we'll assume that was done at onboarding.
+
+Okay, so we filled in all that we can. So, we'll now use the visual basic to add the record to the compliance data. Okay, so that has now referenced in our window there.
+
+And that is just performing a series of lookups on the compliance data tab of this. So, if we look at testy tester, you'll see that it's written in the core data, and then series of formulas there in order to build the various tables we need to build once we're finished updating. If we input some data, and it happens to be wrong. 
+
+So, let's say, oh, actually, the PI insurance went from the 1st of May, not the 1st of June, we can use this section here to alter it. So, the 1st of May, June is going to change to the 1st of May, which means the due date is going to have to change. We can also delete that record if we want to. 
+
+So, where we had a new piece of compliance data that adds it in to the record. So, we can build up a picture over time of what's happened with compliance. If we've got an existing compliance setup, but we just need to modify it, we do it like this. 
+
+So, at the moment for PI insurance, it goes from the 6th of the 1st to the 1st of the 6th. If I now amend it, okay, that has now amended that to the 1st of May. So, that has overwritten that in the data. 
+
+Hopefully, you can see that. There you go, PI insurance, 1st of May, expires 1st of May next year. So, the process every month would then be to update as much as we can, anything we can't update. 
+
+Obviously, we will make contact with the various clinicians, staff members, we will input any answers that we get back. And then when we're ready, we would perform the data update that enables the tables to be built, that will then inform the dashboard. So, we would save the data store first, as part of our process, because what it's going to do is it's going to use the data saved here. 
+
+Plus, it's going to pull in data from other user input tools to build up the requirements and the timeframes tables, first of all. So, we would do a data refresh, which can take a little while remotely, unfortunately, usually it does it in five or six seconds in the office. But the transfer speed via the VPN doesn't appear to be very good.
+
+So, we would do one refresh, we would then save, we would then do another refresh, and then save. The other thing we would do is we would update the last updated tab. Now, there is Visual Basic in the tools that should do this automatically for us.
+
+But some of the Visual Basics not working in that respect. We're not sure why we have run it past Chris Wright. He said, I'm pretty good at Visual Basic. 
+
+He couldn't debug it. And then when we've done that, the tables will be all built, the power queries would have built those tables. So, I'm going to stop that.
+
+Because I don't particularly want to add testy tester in any way. And then we would save the data. So, I'm just going to make testy tester not active.
+
+So, next time it builds a requirements table, it won't have testy tester in it because it's not active. We'll have it in but it will show it as inactive. Then when I close that, as I say, there is a Visual Basic that says, do you want to update the last updated date? That doesn't work for some reason. 
+
+That's something we need to do. But you know, if we have to fill it in manually, it's not a big deal. Now, we don't save this stage, because what happens is that with some of these, it closes the compliance data before it's updated.
+
+Then these formulas, which are just lookups, can corrupt. And then it will automatically start a data update again, which kind of looks like it's going hell for leather there. So, it might do it quite quickly, who knows? No, probably not.
+
+(This file is longer than 30 minutes. Go Unlimited at https://turboscribe.ai/ to transcribe files up to 10 hours long.)

@@ -1,0 +1,399 @@
+1
+00:00:04,680 --> 00:00:07,880
+(Transcribed by TurboScribe. Go Unlimited to remove this message.) Hi Dheeraj, it's me again.
+
+2
+00:00:09,480 --> 00:00:11,120
+So I'm going to make a video now
+
+3
+00:00:11,120 --> 00:00:19,600
+to show how we update the compliance for
+
+4
+00:00:19,600 --> 00:00:21,860
+incidents, which I think I might have included
+
+5
+00:00:21,860 --> 00:00:25,600
+on the list of the last video as
+
+6
+00:00:25,600 --> 00:00:28,360
+one of the ones that was a standard
+
+7
+00:00:28,360 --> 00:00:30,480
+update.
+
+8
+00:00:31,800 --> 00:00:33,660
+Did I do that by mistake?
+
+9
+00:00:34,680 --> 00:00:36,520
+I didn't, that's good, excellent.
+
+10
+00:00:41,420 --> 00:00:46,280
+So I'll share my screen and I'll show
+
+11
+00:00:46,280 --> 00:00:48,320
+you how this one is updated.
+
+12
+00:01:08,910 --> 00:01:10,270
+I hope that's sharing.
+
+13
+00:01:11,330 --> 00:01:12,550
+Let me just try again.
+
+14
+00:01:14,510 --> 00:01:16,790
+Don't want to record a video and then
+
+15
+00:01:16,790 --> 00:01:19,870
+find it's not sharing.
+
+16
+00:01:24,440 --> 00:01:25,660
+That's more like it.
+
+17
+00:01:30,340 --> 00:01:35,840
+Okay, so this is the, excuse me, this
+
+18
+00:01:35,840 --> 00:01:39,180
+is the input tool that we use.
+
+19
+00:01:39,280 --> 00:01:40,820
+It doesn't work in the same way as
+
+20
+00:01:40,820 --> 00:01:44,020
+the other ones that I did a video
+
+21
+00:01:44,020 --> 00:01:44,800
+for last time.
+
+22
+00:01:45,520 --> 00:01:51,520
+We don't need a names tag for this
+
+23
+00:01:51,520 --> 00:01:55,640
+one because there's only one name and that's
+
+24
+00:01:55,640 --> 00:01:56,300
+provide wellbeing.
+
+25
+00:01:56,500 --> 00:02:00,600
+So we're looking at incidents for provide wellbeing.
+
+26
+00:02:04,400 --> 00:02:08,060
+So this is the requirements table which we
+
+27
+00:02:08,060 --> 00:02:09,120
+can build manually.
+
+28
+00:02:10,600 --> 00:02:15,260
+So we've got our different compliance types that
+
+29
+00:02:15,260 --> 00:02:16,960
+are set up for incidents.
+
+30
+00:02:18,840 --> 00:02:20,860
+They're all required to be reported.
+
+31
+00:02:22,160 --> 00:02:24,420
+They're all core requirements.
+
+32
+00:02:25,160 --> 00:02:26,540
+There's no notes.
+
+33
+00:02:28,020 --> 00:02:30,880
+There's a lookup there which gets pulled through
+
+34
+00:02:30,880 --> 00:02:33,180
+into the requirements table in the compliance data,
+
+35
+00:02:33,400 --> 00:02:37,220
+I think, which acts as some kind of
+
+36
+00:02:37,220 --> 00:02:39,400
+lookup to build those tables.
+
+37
+00:02:42,040 --> 00:02:43,800
+And they'll all be active all the time
+
+38
+00:02:43,800 --> 00:02:47,720
+and we can manually switch them off for
+
+39
+00:02:47,720 --> 00:02:49,480
+any reason, or we can add other ones
+
+40
+00:02:49,480 --> 00:02:49,940
+on, I guess.
+
+41
+00:02:50,960 --> 00:02:53,160
+So that's our requirements table.
+
+42
+00:02:53,300 --> 00:02:54,720
+So you remember for the last time we
+
+43
+00:02:54,720 --> 00:02:58,520
+had a names, a requirements, and a compliance
+
+44
+00:02:58,520 --> 00:03:00,500
+timeframes table.
+
+45
+00:03:00,860 --> 00:03:03,420
+So names we don't actually need because there's
+
+46
+00:03:03,420 --> 00:03:05,180
+only one name and the name is provide
+
+47
+00:03:05,180 --> 00:03:05,700
+wellbeing.
+
+48
+00:03:06,140 --> 00:03:08,120
+This is the requirements table.
+
+49
+00:03:08,720 --> 00:03:13,600
+This is the compliance table, compliance timeframes table,
+
+50
+00:03:13,760 --> 00:03:14,000
+sorry.
+
+51
+00:03:15,040 --> 00:03:17,420
+So the compliance type, how often?
+
+52
+00:03:20,860 --> 00:03:23,760
+Matt's said it for twice a month.
+
+53
+00:03:24,260 --> 00:03:25,860
+We only look at this every month.
+
+54
+00:03:27,720 --> 00:03:29,440
+They're all core requirements.
+
+55
+00:03:29,600 --> 00:03:32,020
+They fall into the compliance group operational.
+
+56
+00:03:32,660 --> 00:03:35,680
+So that's one of the big three people,
+
+57
+00:03:36,640 --> 00:03:38,100
+operational and clinical.
+
+58
+00:03:39,780 --> 00:03:41,140
+The subgroup is incidents.
+
+59
+00:03:43,280 --> 00:03:46,880
+There's a lookup there which pulls into the
+
+60
+00:03:46,880 --> 00:03:47,340
+table.
+
+61
+00:03:49,980 --> 00:03:52,860
+Missing again, I'm not 100% sure what
+
+62
+00:03:52,860 --> 00:03:54,140
+that does.
+
+63
+00:03:54,280 --> 00:03:56,020
+I think it just checks to see that
+
+64
+00:03:56,020 --> 00:03:57,540
+there's a requirement for it.
+
+65
+00:03:59,140 --> 00:04:04,080
+And then we have our thresholds for our
+
+66
+00:04:04,080 --> 00:04:07,300
+visual, which is a dial based on percentage.
+
+67
+00:04:08,820 --> 00:04:12,880
+So if it's 100%, it's going to show
+
+68
+00:04:12,880 --> 00:04:13,340
+green.
+
+69
+00:04:14,140 --> 00:04:20,220
+If it's anything less than that, it's going
+
+70
+00:04:20,220 --> 00:04:20,940
+to show red.
+
+71
+00:04:22,520 --> 00:04:23,840
+That's how it's been set up.
+
+72
+00:04:30,130 --> 00:04:34,430
+Let me go through then the process of
+
+73
+00:04:34,430 --> 00:04:35,770
+how we update it.
+
+74
+00:04:37,510 --> 00:04:43,710
+So how we update it is this, is
+
+75
+00:04:43,710 --> 00:04:53,180
+we download from Datex all of the incident
+
+76
+00:04:53,180 --> 00:04:58,780
+data from Datex and load it into there.
+
+77
+00:04:59,780 --> 00:05:04,720
+So in other words, and I'll need to,
+
+78
+00:05:05,960 --> 00:05:08,640
+I'm assuming it will keep on sharing if
+
+79
+00:05:08,640 --> 00:05:09,500
+I do this.
+
+80
+00:05:10,240 --> 00:05:12,000
+No, I don't think it will.
+
+81
+00:05:14,980 --> 00:05:16,880
+I'll pull this over to here.
+
+82
+00:05:19,780 --> 00:05:21,440
+Yeah, that should be sharing.
+
+83
+00:05:24,960 --> 00:05:37,050
+So we just go into Datex and
+
+84
+00:05:37,050 --> 00:05:41,410
+we go into the dashboard and then we
+
+85
+00:05:41,410 --> 00:06:02,010
+pull out the export for Datex and then
+
+86
+00:06:02,010 --> 00:06:05,410
+we just copy and paste it into here.
+
+87
+00:06:17,740 --> 00:06:18,360
+Okay.
+
+88
+00:06:19,660 --> 00:06:22,580
+There's a column there that puts it into
+
+89
+00:06:22,580 --> 00:06:23,140
+a grouping.
+
+90
+00:06:23,920 --> 00:06:30,930
+So it looks at the category, which is
+
+91
+00:06:30,930 --> 00:06:36,410
+over here and references that with a table
+
+92
+00:06:36,410 --> 00:06:39,190
+and then it puts it into one of
+
+93
+00:06:39,190 --> 00:06:39,970
+our categories.
+
+94
+00:06:41,530 --> 00:06:44,110
+So what we generally do when we copy
+
+95
+00:06:44,110 --> 00:06:50,330
+it in is we'll check that column.
+
+96
+00:06:51,430 --> 00:06:52,830
+Oh look, hashtag red.
+
+97
+00:06:53,130 --> 00:06:53,970
+That's good, isn't it?
+
+98
+00:06:55,270 --> 00:06:56,050
+That needs fixing.
+
+99
+00:07:00,910 --> 00:07:03,310
+I'm just going to pause the recording there,
+
+100
+00:07:03,390 --> 00:07:08,030
+Dheeraj, which I think I can do.
