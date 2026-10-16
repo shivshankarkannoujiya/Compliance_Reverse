@@ -1,0 +1,415 @@
+1
+00:00:06,220 --> 00:00:08,620
+(Transcribed by TurboScribe. Go Unlimited to remove this message.) Hi Dheeraj, so this will be the last
+
+2
+00:00:08,620 --> 00:00:12,260
+video, at least for now.
+
+3
+00:00:12,980 --> 00:00:19,620
+This video deals with complications compliance.
+
+4
+00:00:20,600 --> 00:00:24,600
+So this is operation complications.
+
+5
+00:00:25,820 --> 00:00:27,180
+Let me share my screen.
+
+6
+00:00:30,890 --> 00:00:36,030
+Okay, so this is the most manual, I
+
+7
+00:00:36,030 --> 00:00:38,430
+would say, of our compliance processes.
+
+8
+00:00:38,610 --> 00:00:44,450
+And the reason is, I think there was
+
+9
+00:00:44,450 --> 00:00:49,350
+an intention to automate it in a similar
+
+10
+00:00:49,350 --> 00:00:52,490
+way to others that you've seen, but it
+
+11
+00:00:52,490 --> 00:00:55,830
+wasn't anywhere near finished before Matt left.
+
+12
+00:00:57,830 --> 00:01:00,030
+Paul Harrison was quite keen for it to
+
+13
+00:01:00,030 --> 00:01:02,030
+appear on the dashboard at the time.
+
+14
+00:01:02,530 --> 00:01:04,230
+So he asked us to see if we
+
+15
+00:01:04,230 --> 00:01:08,490
+could cobble together something of our own that
+
+16
+00:01:08,490 --> 00:01:12,590
+would be meaningful and then look at automating
+
+17
+00:01:12,590 --> 00:01:13,450
+it later on.
+
+18
+00:01:14,210 --> 00:01:17,830
+It hasn't been automated, but this is essentially
+
+19
+00:01:17,830 --> 00:01:18,750
+how we do it.
+
+20
+00:01:18,850 --> 00:01:21,650
+So this is our complications report.
+
+21
+00:01:23,130 --> 00:01:26,050
+And before the dashboard came about, it was
+
+22
+00:01:26,050 --> 00:01:29,330
+used to monitor complications and record complications.
+
+23
+00:01:30,750 --> 00:01:33,950
+How it effectively works is this.
+
+24
+00:01:34,130 --> 00:01:41,270
+When it's opened, there's a little bit of
+
+25
+00:01:41,270 --> 00:01:46,950
+visual basic somewhere.
+
+26
+00:01:49,370 --> 00:01:50,330
+Perhaps it's not.
+
+27
+00:01:53,010 --> 00:01:54,050
+Oh, no, it probably isn't actually.
+
+28
+00:01:54,850 --> 00:01:59,410
+It has a power query, which effectively refreshes
+
+29
+00:01:59,410 --> 00:02:01,770
+on launch of the workbook.
+
+30
+00:02:02,850 --> 00:02:09,830
+So the power query is an extract from
+
+31
+00:02:09,830 --> 00:02:14,550
+our appointments datastore.
+
+32
+00:02:14,550 --> 00:02:16,610
+It goes into this table here.
+
+33
+00:02:18,770 --> 00:02:22,030
+And then there are some formulae.
+
+34
+00:02:23,670 --> 00:02:30,170
+So it gives a patient a patient ID,
+
+35
+00:02:31,190 --> 00:02:32,410
+next appointment date.
+
+36
+00:02:32,450 --> 00:02:34,850
+I don't know why that's required, but it's
+
+37
+00:02:34,850 --> 00:02:35,330
+in there.
+
+38
+00:02:35,830 --> 00:02:38,350
+And then it says if there's an infection,
+
+39
+00:02:43,290 --> 00:02:53,490
+pain or VAS failure by searching
+
+40
+00:02:53,490 --> 00:03:02,170
+within this tab here, that's table five.
+
+41
+00:03:03,690 --> 00:03:07,290
+Presume that's the one to recur, which is
+
+42
+00:03:07,290 --> 00:03:09,470
+blah, blah, blah appointment complications.
+
+43
+00:03:12,170 --> 00:03:15,230
+Yeah, pretty sure it is.
+
+44
+00:03:16,330 --> 00:03:17,390
+All complications.
+
+45
+00:03:20,510 --> 00:03:22,770
+It must be this one or is it
+
+46
+00:03:22,770 --> 00:03:23,550
+even this one?
+
+47
+00:03:28,280 --> 00:03:29,680
+Complications details.
+
+48
+00:03:30,060 --> 00:03:32,240
+Perhaps it is that one actually.
+
+49
+00:03:33,160 --> 00:03:34,740
+Complications from system one.
+
+50
+00:03:36,680 --> 00:03:40,180
+So we wait for the appointments to refresh.
+
+51
+00:03:40,500 --> 00:03:43,440
+We upload from system one.
+
+52
+00:03:44,980 --> 00:03:46,420
+Complications details.
+
+53
+00:03:46,700 --> 00:03:51,360
+We copy any new complications into the log.
+
+54
+00:03:55,200 --> 00:03:56,820
+There's a lookup in the log.
+
+55
+00:03:56,940 --> 00:03:59,380
+I don't even know what that is specifically
+
+56
+00:03:59,380 --> 00:03:59,980
+used for.
+
+57
+00:04:00,060 --> 00:04:04,300
+It might be to cross refer with this.
+
+58
+00:04:04,960 --> 00:04:07,560
+Again, this was all set up back in
+
+59
+00:04:07,560 --> 00:04:09,100
+the midst of time by Matt.
+
+60
+00:04:09,660 --> 00:04:19,570
+There are various pivots which we refresh
+
+61
+00:04:19,570 --> 00:04:23,730
+after the data has been loaded in.
+
+62
+00:04:24,430 --> 00:04:31,750
+So these pivots are pulling information from here,
+
+63
+00:04:32,150 --> 00:04:37,090
+which is our appointments master list, if you
+
+64
+00:04:37,090 --> 00:04:37,610
+like.
+
+65
+00:04:38,750 --> 00:04:43,710
+So it's pulling in.
+
+66
+00:04:47,340 --> 00:04:49,360
+So this is VAS ops.
+
+67
+00:04:56,110 --> 00:04:57,550
+This is all ops.
+
+68
+00:05:01,860 --> 00:05:03,160
+This is all infections.
+
+69
+00:05:04,440 --> 00:05:06,020
+This is all pain.
+
+70
+00:05:08,300 --> 00:05:10,620
+Then there are a series of tables which
+
+71
+00:05:10,620 --> 00:05:17,680
+Matt set up to calculate to calculate rates
+
+72
+00:05:17,680 --> 00:05:19,820
+of incidence for complications.
+
+73
+00:05:26,930 --> 00:05:30,030
+And then the compliance is really a manual
+
+74
+00:05:30,030 --> 00:05:36,830
+process whereby we count how many complications of
+
+75
+00:05:36,830 --> 00:05:44,010
+different types have occurred in in the last
+
+76
+00:05:44,010 --> 00:05:45,030
+12 months.
+
+77
+00:05:47,990 --> 00:05:54,970
+And we then calculate what the rates of
+
+78
+00:05:54,970 --> 00:05:57,110
+incidence are for each month.
+
+79
+00:05:58,490 --> 00:06:00,270
+And then we have a set of standards
+
+80
+00:06:00,270 --> 00:06:08,410
+here whereby if they're within those, they're compliant.
+
+81
+00:06:08,630 --> 00:06:11,210
+If they're not, they're noncompliant.
+
+82
+00:06:15,750 --> 00:06:19,990
+And then this works out for failure rates,
+
+83
+00:06:20,090 --> 00:06:24,730
+the 12-month spike based on the calculations
+
+84
+00:06:24,730 --> 00:06:25,190
+here.
+
+85
+00:06:26,250 --> 00:06:27,990
+And then once we know if everything is
+
+86
+00:06:27,990 --> 00:06:36,590
+compliant or not compliant, we copy the data
+
+87
+00:06:36,590 --> 00:06:46,890
+from a simple table, which is
+
+88
+00:06:46,890 --> 00:06:51,610
+here, which you'll recognise from the other compliance
+
+89
+00:06:51,610 --> 00:06:53,350
+areas we've covered.
+
+90
+00:06:55,230 --> 00:06:58,390
+We copy it into the bottom of our
+
+91
+00:06:58,390 --> 00:07:04,960
+compliance data, into the bottom here.
+
+92
+00:07:08,160 --> 00:07:13,220
+We update our last update date.
+
+93
+00:07:14,380 --> 00:07:18,240
+So complications and we save it and we
+
+94
+00:07:18,240 --> 00:07:19,080
+refresh twice.
+
+95
+00:07:19,560 --> 00:07:25,160
+The compliance timeframes and the requirements pull from
+
+96
+00:07:25,160 --> 00:07:32,060
+a another document, which was the original automated
+
+97
+00:07:32,060 --> 00:07:35,460
+version of that.
+
+98
+00:07:36,180 --> 00:07:42,200
+But it's literally two tables, listing requirements and
+
+99
+00:07:42,200 --> 00:07:43,040
+timeframes.
+
+100
+00:07:44,240 --> 00:07:46,680
+Hopefully that makes a bit of sense.
+
+101
+00:07:47,300 --> 00:07:49,960
+Again, that's the last one.
+
+102
+00:07:51,080 --> 00:07:55,320
+So yeah, let us know if you have
+
+103
+00:07:55,320 --> 00:07:55,860
+any questions.
+
+104
+00:07:56,240 --> 00:07:56,780
+Cheers.

@@ -1,0 +1,43 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Hi Dheeraj, so this will be the last video, at least for now. This video deals with complications compliance. So this is operation complications. 
+
+Let me share my screen. Okay, so this is the most manual, I would say, of our compliance processes. And the reason is, I think there was an intention to automate it in a similar way to others that you've seen, but it wasn't anywhere near finished before Matt left.
+
+Paul Harrison was quite keen for it to appear on the dashboard at the time. So he asked us to see if we could cobble together something of our own that would be meaningful and then look at automating it later on. It hasn't been automated, but this is essentially how we do it. 
+
+So this is our complications report. And before the dashboard came about, it was used to monitor complications and record complications. How it effectively works is this. 
+
+When it's opened, there's a little bit of visual basic somewhere. Perhaps it's not. Oh, no, it probably isn't actually. 
+
+It has a power query, which effectively refreshes on launch of the workbook. So the power query is an extract from our appointments datastore. It goes into this table here. 
+
+And then there are some formulae. So it gives a patient a patient ID, next appointment date. I don't know why that's required, but it's in there. 
+
+And then it says if there's an infection, pain or VAS failure by searching within this tab here, that's table five. Presume that's the one to recur, which is blah, blah, blah appointment complications. Yeah, pretty sure it is. 
+
+All complications. It must be this one or is it even this one? Complications details. Perhaps it is that one actually. 
+
+Complications from system one. So we wait for the appointments to refresh. We upload from system one. 
+
+Complications details. We copy any new complications into the log. There's a lookup in the log. 
+
+I don't even know what that is specifically used for. It might be to cross refer with this. Again, this was all set up back in the midst of time by Matt.
+
+There are various pivots which we refresh after the data has been loaded in. So these pivots are pulling information from here, which is our appointments master list, if you like. So it's pulling in. 
+
+So this is VAS ops. This is all ops. This is all infections. 
+
+This is all pain. Then there are a series of tables which Matt set up to calculate to calculate rates of incidence for complications. And then the compliance is really a manual process whereby we count how many complications of different types have occurred in in the last 12 months.
+
+And we then calculate what the rates of incidence are for each month. And then we have a set of standards here whereby if they're within those, they're compliant. If they're not, they're noncompliant.
+
+And then this works out for failure rates, the 12-month spike based on the calculations here. And then once we know if everything is compliant or not compliant, we copy the data from a simple table, which is here, which you'll recognise from the other compliance areas we've covered. We copy it into the bottom of our compliance data, into the bottom here.
+
+We update our last update date. So complications and we save it and we refresh twice. The compliance timeframes and the requirements pull from a another document, which was the original automated version of that.
+
+But it's literally two tables, listing requirements and timeframes. Hopefully that makes a bit of sense. Again, that's the last one. 
+
+So yeah, let us know if you have any questions. Cheers.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
