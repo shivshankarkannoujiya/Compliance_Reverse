@@ -117,6 +117,8 @@ def build(out):
                 [46, 30, 38, 66]),
           Spacer(1, 4),
           para("<b>02 and 07 are the same tool.</b> 02 stops at a #REF! error; 07 records the whole process and answers most of 02’s gaps (07 §0.3). Read them together."),
+          para("<b>Data store logic.</b> Compliance_Data_Store_Logic.pdf (this folder) documents every table, Power Query step and formula of "
+               "Compliance Data.xlsm from the client’s source template, with 17 findings (DS-01…DS-17). Items it adds to each pre-build checklist carry a -DS suffix."),
           PageBreak()]
 
     s += [H("2. System Architecture", 0),
