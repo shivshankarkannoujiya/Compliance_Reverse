@@ -1,0 +1,567 @@
+1
+00:00:04,670 --> 00:00:10,750
+(Transcribed by TurboScribe. Go Unlimited to remove this message.) Hi Dheeraj, so let me show my screen.
+
+2
+00:00:15,890 --> 00:00:18,290
+So this video is to go over the
+
+3
+00:00:18,290 --> 00:00:25,830
+process to update the compliance data for incidence
+
+4
+00:00:25,830 --> 00:00:30,050
+management, which is a little bit different from
+
+5
+00:00:30,050 --> 00:00:33,830
+the the first video I shared, which was
+
+6
+00:00:33,830 --> 00:00:37,650
+from a specific tool that is then replicated
+
+7
+00:00:37,650 --> 00:00:40,050
+for quite a few of the areas of
+
+8
+00:00:40,050 --> 00:00:40,530
+compliance.
+
+9
+00:00:41,290 --> 00:00:42,410
+This is a little bit different.
+
+10
+00:00:44,230 --> 00:00:53,370
+So let me just start with the setup
+
+11
+00:00:53,370 --> 00:00:55,470
+if you were going from scratch and setting
+
+12
+00:00:55,470 --> 00:00:56,490
+this up from scratch.
+
+13
+00:00:57,200 --> 00:00:59,850
+There is no names tab and that is
+
+14
+00:00:59,850 --> 00:01:06,730
+because there is only essentially one entity that
+
+15
+00:01:06,730 --> 00:01:09,250
+we're monitoring here, which is provide well-being
+
+16
+00:01:10,120 --> 00:01:13,070
+and the compliance types are all to do
+
+17
+00:01:13,070 --> 00:01:16,750
+with incidents, how serious they are and in
+
+18
+00:01:16,750 --> 00:01:19,450
+what part of the business they fall into.
+
+19
+00:01:21,150 --> 00:01:27,030
+So this is the requirements tab, which on
+
+20
+00:01:27,030 --> 00:01:29,990
+the last video I showed was built up
+
+21
+00:01:29,990 --> 00:01:33,450
+using Visual Basic.
+
+22
+00:01:34,230 --> 00:01:39,710
+But because this is, this hasn't got a
+
+23
+00:01:39,710 --> 00:01:43,710
+load of different names that we're or entities
+
+24
+00:01:43,710 --> 00:01:46,410
+that we're monitoring, such as different people for
+
+25
+00:01:46,410 --> 00:01:50,490
+staff requirements, we're just monitoring provide well-being.
+
+26
+00:01:51,610 --> 00:01:54,170
+We can just manually set up and amend
+
+27
+00:01:54,170 --> 00:01:57,250
+the requirements, which are all of these are
+
+28
+00:01:57,250 --> 00:02:01,230
+required and they're all a core requirement and
+
+29
+00:02:01,230 --> 00:02:02,550
+they're always going to be active.
+
+30
+00:02:03,830 --> 00:02:05,010
+Now we can switch them off if we
+
+31
+00:02:05,010 --> 00:02:06,710
+want and add other ones in.
+
+32
+00:02:09,710 --> 00:02:12,770
+Compliance timeframes, which you saw in the last
+
+33
+00:02:12,770 --> 00:02:21,410
+video, is again, a tab we have to
+
+34
+00:02:21,410 --> 00:02:24,710
+set up before we can start building the
+
+35
+00:02:24,710 --> 00:02:25,590
+compliance data.
+
+36
+00:02:26,850 --> 00:02:30,330
+So it has the compliance type.
+
+37
+00:02:31,350 --> 00:02:32,910
+He's got it set up, updated.
+
+38
+00:02:33,590 --> 00:02:36,030
+Matt set it up as twice a month.
+
+39
+00:02:37,290 --> 00:02:39,970
+I don't think that actually makes any difference
+
+40
+00:02:39,970 --> 00:02:41,670
+because we only update it once a month
+
+41
+00:02:41,670 --> 00:02:41,950
+anyway.
+
+42
+00:02:42,830 --> 00:02:45,870
+It's a core requirement, the compliance group it
+
+43
+00:02:45,870 --> 00:02:46,510
+fits into.
+
+44
+00:02:46,650 --> 00:02:48,350
+You'll remember there are three of these operational,
+
+45
+00:02:48,530 --> 00:02:53,270
+clinical and people.
+
+46
+00:02:54,630 --> 00:02:59,010
+It falls into operational and the subgroup is
+
+47
+00:02:59,010 --> 00:03:01,430
+or compliance group two is incidents.
+
+48
+00:03:02,730 --> 00:03:04,550
+There's a look up there, which I think
+
+49
+00:03:04,550 --> 00:03:07,410
+is used somewhere in the compliance data.
+
+50
+00:03:08,210 --> 00:03:10,250
+I don't know exactly how it's being used
+
+51
+00:03:10,250 --> 00:03:11,790
+and why it's in there somewhere.
+
+52
+00:03:13,410 --> 00:03:16,810
+Missing is just, I think is again, checking
+
+53
+00:03:16,810 --> 00:03:19,930
+to see if it has a requirement.
+
+54
+00:03:21,190 --> 00:03:23,970
+And then the threshold limits are the conditional
+
+55
+00:03:23,970 --> 00:03:25,330
+formatting for the visuals.
+
+56
+00:03:26,150 --> 00:03:29,250
+So it's going to be on red if
+
+57
+00:03:29,250 --> 00:03:32,390
+it's not compliant and then green if it
+
+58
+00:03:32,390 --> 00:03:32,850
+is.
+
+59
+00:03:34,890 --> 00:03:38,630
+So it's a simple compliant, not compliant thing.
+
+60
+00:03:39,770 --> 00:03:42,070
+Now, how we build the data for this
+
+61
+00:03:42,070 --> 00:03:50,910
+is we download the datex.
+
+62
+00:03:53,190 --> 00:03:59,930
+We actually download incident data from datex.
+
+63
+00:04:00,770 --> 00:04:22,110
+So we would go to datex and
+
+64
+00:04:22,110 --> 00:04:28,800
+we would download all incidents into Excel.
+
+65
+00:04:40,160 --> 00:04:50,370
+And then that is going to download us
+
+66
+00:04:50,370 --> 00:05:00,330
+our data, which we're going to copy into
+
+67
+00:05:00,330 --> 00:05:00,690
+here.
+
+68
+00:05:01,590 --> 00:05:03,090
+And there's a couple of formulas here.
+
+69
+00:05:03,410 --> 00:05:07,670
+It puts each incident into a particular group.
+
+70
+00:05:10,090 --> 00:05:14,940
+And there are grouping.
+
+71
+00:05:17,420 --> 00:05:21,740
+There's a grouping table to cross, refer that
+
+72
+00:05:21,740 --> 00:05:23,540
+somewhere.
+
+73
+00:05:25,620 --> 00:05:25,940
+My God.
+
+74
+00:05:27,380 --> 00:05:28,760
+Or is that hidden?
+
+75
+00:05:29,140 --> 00:05:29,240
+No.
+
+76
+00:05:31,880 --> 00:05:32,360
+There we go.
+
+77
+00:05:32,500 --> 00:05:32,760
+Sorry.
+
+78
+00:05:33,020 --> 00:05:33,760
+Datex category.
+
+79
+00:05:33,900 --> 00:05:34,680
+So that's a table.
+
+80
+00:05:35,360 --> 00:05:36,960
+So it puts it into one of these
+
+81
+00:05:36,960 --> 00:05:37,400
+categories.
+
+82
+00:05:41,830 --> 00:05:44,610
+And it flags if it's in the last
+
+83
+00:05:44,610 --> 00:05:45,930
+seven months or not.
+
+84
+00:05:47,350 --> 00:05:50,090
+And then it sets up a time frame.
+
+85
+00:05:50,290 --> 00:05:52,550
+This is what Matt set up.
+
+86
+00:05:52,770 --> 00:05:59,490
+So this designates whether it is within a
+
+87
+00:05:59,490 --> 00:06:00,810
+certain time frame.
+
+88
+00:06:01,210 --> 00:06:02,770
+In other words, if it has to be
+
+89
+00:06:02,770 --> 00:06:04,010
+reported or not.
+
+90
+00:06:04,930 --> 00:06:07,410
+So once it falls out of a particular
+
+91
+00:06:07,410 --> 00:06:12,970
+time frame for harm, it doesn't get reported.
+
+92
+00:06:13,310 --> 00:06:14,610
+So this was all set up by Matt.
+
+93
+00:06:18,760 --> 00:06:30,310
+So once that is downloaded, it
+
+94
+00:06:30,310 --> 00:06:39,440
+then informs a pivot
+
+95
+00:06:39,440 --> 00:06:42,900
+for groupings and a pivot for harm.
+
+96
+00:06:46,620 --> 00:06:55,580
+Then we have a series of tables, which
+
+97
+00:06:55,580 --> 00:06:59,180
+looks at the pivots and works out statistical
+
+98
+00:06:59,180 --> 00:07:07,140
+data for each of these areas, which is
+
+99
+00:07:07,140 --> 00:07:08,840
+reflected in compliance.
+
+100
+00:07:12,300 --> 00:07:15,540
+Now, what we generally do is we, um,
+
+101
+00:07:16,060 --> 00:07:19,200
+is when we're doing this for a month,
+
+102
+00:07:19,400 --> 00:07:25,620
+we drop down our heading and our date
+
+103
+00:07:25,620 --> 00:07:28,060
+and drop down all these columns.
+
+104
+00:07:29,080 --> 00:07:32,000
+And then that updates the statistical data.
+
+105
+00:07:32,120 --> 00:07:34,000
+So again, this was all set up by
+
+106
+00:07:34,000 --> 00:07:34,300
+Matt.
+
+107
+00:07:35,140 --> 00:07:38,080
+We've not made any changes to it.
+
+108
+00:07:38,800 --> 00:07:43,600
+It then works out some statistical data for
+
+109
+00:07:43,600 --> 00:07:44,800
+all of these areas.
+
+110
+00:07:45,000 --> 00:07:47,840
+I don't know what that table is.
+
+111
+00:07:52,580 --> 00:07:57,340
+It also has a notes section.
+
+112
+00:08:00,820 --> 00:08:03,680
+Because what it does is when we go
+
+113
+00:08:03,680 --> 00:08:09,320
+to the main table, which is this, it
+
+114
+00:08:09,320 --> 00:08:15,820
+then allows us to specify which datex is
+
+115
+00:08:15,820 --> 00:08:17,880
+causing an issue for compliance.
+
+116
+00:08:19,720 --> 00:08:24,260
+So this table is built out essentially of
+
+117
+00:08:26,800 --> 00:08:34,559
+these formulas here, which is effectively informing the
+
+118
+00:08:34,559 --> 00:08:36,940
+table over here if it's compliant or not.
+
+119
+00:08:36,940 --> 00:08:41,230
+It has a RAG rating.
+
+120
+00:08:42,130 --> 00:08:44,190
+So 10 would be green, three would be
+
+121
+00:08:44,190 --> 00:08:45,350
+red.
+
+122
+00:08:51,230 --> 00:08:54,430
+And then all we do is we copy
+
+123
+00:08:54,430 --> 00:09:01,490
+up to here into the bottom of our
+
+124
+00:09:01,490 --> 00:09:02,590
+compliance data.
+
+125
+00:09:04,870 --> 00:09:08,090
+So we would literally copy and paste it
+
+126
+00:09:08,090 --> 00:09:09,210
+in to the bottom.
+
+127
+00:09:09,730 --> 00:09:11,550
+We would save that file.
+
+128
+00:09:11,750 --> 00:09:14,530
+And then we would refresh the power queries
+
+129
+00:09:14,530 --> 00:09:15,450
+twice.
+
+130
+00:09:16,430 --> 00:09:18,930
+And it would then build the tables and
+
+131
+00:09:18,930 --> 00:09:24,570
+incorporate that data into the final table, which
+
+132
+00:09:24,570 --> 00:09:26,890
+then informs our dashboard, which is the same
+
+133
+00:09:26,890 --> 00:09:29,890
+process as the other video.
+
+134
+00:09:30,350 --> 00:09:33,310
+It's just how we get to this data.
+
+135
+00:09:34,550 --> 00:09:36,730
+So where Visual Basic was copying it in
+
+136
+00:09:37,450 --> 00:09:41,810
+with staff management, automatically, we actually copy and
+
+137
+00:09:41,810 --> 00:09:43,670
+paste it in once this table has been
+
+138
+00:09:43,670 --> 00:09:47,470
+built as a result of doing those processes.
+
+139
+00:09:49,330 --> 00:09:52,090
+So that is it for that video.
+
+140
+00:09:52,630 --> 00:09:55,090
+I will share this with you and I
+
+141
+00:09:55,090 --> 00:09:56,270
+will record another one.
+
+142
+00:09:56,690 --> 00:09:57,890
+Thanks ever so much.

@@ -1,0 +1,49 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Hi Dheeraj, so let me show my screen. So this video is to go over the process to update the compliance data for incidence management, which is a little bit different from the the first video I shared, which was from a specific tool that is then replicated for quite a few of the areas of compliance. This is a little bit different. 
+
+So let me just start with the setup if you were going from scratch and setting this up from scratch. There is no names tab and that is because there is only essentially one entity that we're monitoring here, which is provide well-being and the compliance types are all to do with incidents, how serious they are and in what part of the business they fall into. So this is the requirements tab, which on the last video I showed was built up using Visual Basic. 
+
+But because this is, this hasn't got a load of different names that we're or entities that we're monitoring, such as different people for staff requirements, we're just monitoring provide well-being. We can just manually set up and amend the requirements, which are all of these are required and they're all a core requirement and they're always going to be active. Now we can switch them off if we want and add other ones in.
+
+Compliance timeframes, which you saw in the last video, is again, a tab we have to set up before we can start building the compliance data. So it has the compliance type. He's got it set up, updated. 
+
+Matt set it up as twice a month. I don't think that actually makes any difference because we only update it once a month anyway. It's a core requirement, the compliance group it fits into. 
+
+You'll remember there are three of these operational, clinical and people. It falls into operational and the subgroup is or compliance group two is incidents. There's a look up there, which I think is used somewhere in the compliance data. 
+
+I don't know exactly how it's being used and why it's in there somewhere. Missing is just, I think is again, checking to see if it has a requirement. And then the threshold limits are the conditional formatting for the visuals.
+
+So it's going to be on red if it's not compliant and then green if it is. So it's a simple compliant, not compliant thing. Now, how we build the data for this is we download the datex.
+
+We actually download incident data from datex. So we would go to datex and we would download all incidents into Excel. And then that is going to download us our data, which we're going to copy into here. 
+
+And there's a couple of formulas here. It puts each incident into a particular group. And there are grouping.
+
+There's a grouping table to cross, refer that somewhere. My God. Or is that hidden? No. 
+
+There we go. Sorry. Datex category. 
+
+So that's a table. So it puts it into one of these categories. And it flags if it's in the last seven months or not.
+
+And then it sets up a time frame. This is what Matt set up. So this designates whether it is within a certain time frame. 
+
+In other words, if it has to be reported or not. So once it falls out of a particular time frame for harm, it doesn't get reported. So this was all set up by Matt. 
+
+So once that is downloaded, it then informs a pivot for groupings and a pivot for harm. Then we have a series of tables, which looks at the pivots and works out statistical data for each of these areas, which is reflected in compliance. Now, what we generally do is we, um, is when we're doing this for a month, we drop down our heading and our date and drop down all these columns.
+
+And then that updates the statistical data. So again, this was all set up by Matt. We've not made any changes to it. 
+
+It then works out some statistical data for all of these areas. I don't know what that table is. It also has a notes section.
+
+Because what it does is when we go to the main table, which is this, it then allows us to specify which datex is causing an issue for compliance. So this table is built out essentially of these formulas here, which is effectively informing the table over here if it's compliant or not. It has a RAG rating. 
+
+So 10 would be green, three would be red. And then all we do is we copy up to here into the bottom of our compliance data. So we would literally copy and paste it in to the bottom. 
+
+We would save that file. And then we would refresh the power queries twice. And it would then build the tables and incorporate that data into the final table, which then informs our dashboard, which is the same process as the other video. 
+
+It's just how we get to this data. So where Visual Basic was copying it in with staff management, automatically, we actually copy and paste it in once this table has been built as a result of doing those processes. So that is it for that video. 
+
+I will share this with you and I will record another one. Thanks ever so much.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
